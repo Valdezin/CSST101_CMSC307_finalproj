@@ -33,7 +33,7 @@ public class Form_MainMenu extends javax.swing.JFrame {
     
     public Form_MainMenu(String usr) {
         initComponents();
-        
+        /**
         Timer timer = new Timer(1000, e -> {
         String currentDate = new SimpleDateFormat("EEEE, MMMM d, yyyy").format(new Date());
         String currentTime = new SimpleDateFormat("hh:mm:ss a").format(new Date());
@@ -42,7 +42,7 @@ public class Form_MainMenu extends javax.swing.JFrame {
           jLabel2.setText(currentTime);
         });
         timer.start();
-        
+        **/
         usr = usr.toUpperCase();
         usrvar = usr;
         
