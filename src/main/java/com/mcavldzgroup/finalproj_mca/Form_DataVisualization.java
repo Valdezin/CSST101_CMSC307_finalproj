@@ -8,6 +8,15 @@ package com.mcavldzgroup.finalproj_mca;
  *
  * @author VALDEZ
  */
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.general.DefaultPieDataset;
+
+
 public class Form_DataVisualization extends javax.swing.JFrame {
 
     /**
@@ -28,38 +37,155 @@ public class Form_DataVisualization extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        panelChart = new javax.swing.JPanel();
+        btnShowCart = new javax.swing.JButton();
+        showPieChart = new javax.swing.JButton();
+        showLineChart = new javax.swing.JButton();
+        showWaterfall = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setText("Data Visualization");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setText("Show Charts");
+
+        panelChart.setBackground(new java.awt.Color(204, 255, 204));
+
+        javax.swing.GroupLayout panelChartLayout = new javax.swing.GroupLayout(panelChart);
+        panelChart.setLayout(panelChartLayout);
+        panelChartLayout.setHorizontalGroup(
+            panelChartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 550, Short.MAX_VALUE)
+        );
+        panelChartLayout.setVerticalGroup(
+            panelChartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 456, Short.MAX_VALUE)
+        );
+
+        btnShowCart.setBackground(new java.awt.Color(51, 153, 255));
+        btnShowCart.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnShowCart.setText("Enrollee");
+        btnShowCart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnShowCartActionPerformed(evt);
+            }
+        });
+
+        showPieChart.setBackground(new java.awt.Color(255, 102, 255));
+        showPieChart.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        showPieChart.setText("Program");
+        showPieChart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showPieChartActionPerformed(evt);
+            }
+        });
+
+        showLineChart.setBackground(new java.awt.Color(204, 204, 0));
+        showLineChart.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        showLineChart.setText("Gender");
+        showLineChart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showLineChartActionPerformed(evt);
+            }
+        });
+
+        showWaterfall.setBackground(new java.awt.Color(204, 0, 204));
+        showWaterfall.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        showWaterfall.setText("Changes");
+        showWaterfall.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showWaterfallActionPerformed(evt);
+            }
+        });
+
+        btnExit.setBackground(new java.awt.Color(255, 0, 0));
+        btnExit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnExit.setForeground(new java.awt.Color(255, 255, 255));
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel2.setText("bala na kayo dito");
+        jLabel2.setText("Enrollment");
+
+        jPanel2.setBackground(new java.awt.Color(0, 204, 0));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 106, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel3.setText("Monitoring");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(showWaterfall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(showLineChart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(showPieChart, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                            .addComponent(btnShowCart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(291, 291, 291)
-                        .addComponent(jLabel2)))
-                .addContainerGap(308, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(59, 59, 59)
+                                .addComponent(btnExit))
+                            .addComponent(jLabel3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)))
+                .addComponent(panelChart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel1)
-                .addGap(140, 140, 140)
+                .addContainerGap()
                 .addComponent(jLabel2)
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnShowCart)
+                .addGap(18, 18, 18)
+                .addComponent(showPieChart)
+                .addGap(18, 18, 18)
+                .addComponent(showLineChart)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(showWaterfall)
+                .addGap(53, 53, 53)
+                .addComponent(btnExit)
+                .addContainerGap(30, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelChart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -77,15 +203,150 @@ public class Form_DataVisualization extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
+    private void btnShowCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowCartActionPerformed
+        // Create dataset
+    DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+
+    // Total 1000 students distributed
+    dataset.addValue(200, "Enrolled", "January");
+    dataset.addValue(220, "Enrolled", "February");
+    dataset.addValue(250, "Enrolled", "March");
+    dataset.addValue(180, "Enrolled", "April");
+    dataset.addValue(150, "Enrolled", "May");
+
+    dataset.addValue(50, "Dropped", "January");
+    dataset.addValue(30, "Dropped", "February");
+    dataset.addValue(20, "Dropped", "March");
+    dataset.addValue(10, "Dropped", "April");
+    dataset.addValue(10, "Dropped", "May");
+
+    // Create chart
+    JFreeChart barChart = ChartFactory.createBarChart(
+            "School Enrollment Monitoring", // Chart title
+            "Month", // X-axis label
+            "Number of Students", // Y-axis label
+            dataset // Dataset
+    );
+
+    // Wrap the chart in a ChartPanel and display it in panelChart
+    ChartPanel chartPanel = new ChartPanel(barChart);
+    chartPanel.setPreferredSize(new java.awt.Dimension(550, 446)); // Set the size explicitly
+
+    panelChart.removeAll();
+    panelChart.setLayout(new java.awt.BorderLayout());
+    panelChart.add(chartPanel, java.awt.BorderLayout.CENTER);
+    panelChart.validate();
+    panelChart.repaint();
+    }//GEN-LAST:event_btnShowCartActionPerformed
+
+    private void showPieChartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showPieChartActionPerformed
+        // Create dataset
+    DefaultPieDataset pieDataset = new DefaultPieDataset();
+
+    // Total 1000 students distributed
+    pieDataset.setValue("Computer Science", 600);
+    pieDataset.setValue("Information Technology", 400);
+
+    // Create chart
+    JFreeChart pieChart = ChartFactory.createPieChart(
+            "Enrollment Distribution by Program", // Chart title
+            pieDataset, // Dataset
+            true, // Show legend
+            true, // Use tooltips
+            false // URLs?
+    );
+
+    // Wrap the chart in a ChartPanel and display it in panelChart
+    ChartPanel chartPanel = new ChartPanel(pieChart);
+    chartPanel.setPreferredSize(new java.awt.Dimension(550, 446)); // Set the size explicitly
+
+    panelChart.removeAll();
+    panelChart.setLayout(new java.awt.BorderLayout());
+    panelChart.add(chartPanel, java.awt.BorderLayout.CENTER);
+    panelChart.validate();
+    panelChart.repaint();
+    }//GEN-LAST:event_showPieChartActionPerformed
+
+    private void showLineChartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showLineChartActionPerformed
+        // Create dataset
+    DefaultCategoryDataset lineDataset = new DefaultCategoryDataset();
+
+    // Total 1000 students distributed
+    lineDataset.addValue(200, "Male", "January");
+    lineDataset.addValue(220, "Male", "February");
+    lineDataset.addValue(250, "Male", "March");
+    lineDataset.addValue(230, "Male", "April");
+    lineDataset.addValue(200, "Male", "May");
+
+    lineDataset.addValue(200, "Female", "January");
+    lineDataset.addValue(180, "Female", "February");
+    lineDataset.addValue(150, "Female", "March");
+    lineDataset.addValue(170, "Female", "April");
+    lineDataset.addValue(200, "Female", "May");
+
+    // Create chart
+    JFreeChart lineChart = ChartFactory.createLineChart(
+            "Male vs Female Enrollment", // Chart title
+            "Month", // X-axis label
+            "Number of Students", // Y-axis label
+            lineDataset // Dataset
+    );
+
+    // Wrap the chart in a ChartPanel and display it in panelChart
+    ChartPanel chartPanel = new ChartPanel(lineChart);
+    chartPanel.setPreferredSize(new java.awt.Dimension(550, 446)); // Set the size explicitly
+
+    panelChart.removeAll();
+    panelChart.setLayout(new java.awt.BorderLayout());
+    panelChart.add(chartPanel, java.awt.BorderLayout.CENTER);
+    panelChart.validate();
+    panelChart.repaint();
+    }//GEN-LAST:event_showLineChartActionPerformed
+
+    private void showWaterfallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showWaterfallActionPerformed
+        // Create dataset
+    DefaultCategoryDataset waterfallDataset = new DefaultCategoryDataset();
+
+    // Total 1000 students distributed
+    waterfallDataset.addValue(1000, "Enrollment", "Starting Enrollment");
+    waterfallDataset.addValue(-100, "Enrollment", "Dropouts");
+    waterfallDataset.addValue(-150, "Enrollment", "Graduations");
+    waterfallDataset.addValue(750, "Enrollment", "Ending Enrollment");
+
+    // Create the waterfall chart
+    JFreeChart waterfallChart = ChartFactory.createWaterfallChart(
+            "School Enrollment Changes", // Chart title
+            "Categories", // X-axis label
+            "Number of Students", // Y-axis label
+            waterfallDataset, // Dataset
+            PlotOrientation.VERTICAL,
+            true, // Show legend
+            true, // Use tooltips
+            false // Generate URLs
+    );
+
+    // Customize the chart panel
+    ChartPanel chartPanel = new ChartPanel(waterfallChart);
+    chartPanel.setPreferredSize(new java.awt.Dimension(550, 446)); // Set the size explicitly
+
+    panelChart.removeAll();
+    panelChart.setLayout(new java.awt.BorderLayout());
+    panelChart.add(chartPanel, java.awt.BorderLayout.CENTER);
+    panelChart.validate();
+    panelChart.repaint();
+    }//GEN-LAST:event_showWaterfallActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        this.dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_btnExitActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -93,19 +354,9 @@ public class Form_DataVisualization extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Form_DataVisualization.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Form_DataVisualization.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Form_DataVisualization.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Form_DataVisualization.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -116,8 +367,16 @@ public class Form_DataVisualization extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnShowCart;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel panelChart;
+    private javax.swing.JButton showLineChart;
+    private javax.swing.JButton showPieChart;
+    private javax.swing.JButton showWaterfall;
     // End of variables declaration//GEN-END:variables
 }
