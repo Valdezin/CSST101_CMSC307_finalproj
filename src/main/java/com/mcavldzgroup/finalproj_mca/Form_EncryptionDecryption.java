@@ -46,8 +46,8 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         clearbtn = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        encryptedMessage1 = new javax.swing.JTextField();
-        shiftValuetxt1 = new javax.swing.JTextField();
+        txtdecrypted = new javax.swing.JTextField();
+        shiftValueDecrypt = new javax.swing.JTextField();
         btnDecrypt = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
@@ -113,9 +113,9 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel7.setText("Enter the shift value:");
 
-        encryptedMessage1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtdecrypted.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
-        shiftValuetxt1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        shiftValueDecrypt.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
         btnDecrypt.setBackground(new java.awt.Color(102, 204, 0));
         btnDecrypt.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -177,8 +177,8 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
                                     .addComponent(jLabel6)
                                     .addComponent(jLabel7)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(shiftValuetxt1)
-                                        .addComponent(encryptedMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(shiftValueDecrypt)
+                                        .addComponent(txtdecrypted, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnDecrypt))
                                     .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(53, 53, 53)
@@ -216,11 +216,11 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(encryptedMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtdecrypted, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(shiftValuetxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(shiftValueDecrypt, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(64, 64, 64)
                         .addComponent(btnDecrypt)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -295,43 +295,27 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
 
     private void btnDecryptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecryptActionPerformed
         // TODO add your handling code here:
-        try {
-            // Retrieve the encrypted message and shift value from the text fields
-            String encryptedMessageText = encryptedMessage.getText();
-            String shiftValueText = shiftValuetxt.getText();
+    try {
+    // Retrieve the message and shift value from the text fields
+    String message = txtdecrypted.getText();
+    int shift = Integer.parseInt(shiftValueDecrypt.getText());
 
-            // Check if either field is empty
-            if (encryptedMessageText.isEmpty() || shiftValueText.isEmpty()) {
-                JOptionPane.showMessageDialog(null, "Fill all the fields", "Error", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
+    // Decrypt the message using the Caesar cipher
+    String decrypted = caesarCipherDecrypt(message, shift);
 
-            // Try to parse the shift value to an integer
-            int shift;
-            try {
-                shift = Integer.parseInt(shiftValueText);
-            } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Incorrect value in shift field", "Error", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
-
-            // Decrypt the message using the Caesar cipher (reverse of encryption)
-            String decrypted = caesarCipherDecrypt(encryptedMessageText, shift);
-
-            // Display the decrypted message in the JTextArea
-            textResult.setText(decrypted);
-
-        } catch (Exception e) {
-            // Handle any unexpected exceptions
-            JOptionPane.showMessageDialog(null, "An error occurred: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        }
+    // Display the decrypted message in the JTextArea
+    textResult.setText(decrypted);
+    } catch (NumberFormatException e) {
+    // Handle invalid shift value input
+    JOptionPane.showMessageDialog(this, "Please enter a valid number for the shift value.", "Error", JOptionPane.ERROR_MESSAGE);
+     }
     }//GEN-LAST:event_btnDecryptActionPerformed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         // TODO add your handling code here:
-        encryptedMessage.setText(""); // Clears the text of the JTextField
-        shiftValuetxt.setText(""); // Clears the text of the JTextField
         textResult.setText(""); // Clears the text of the JTextField
+        shiftValueDecrypt.setText(""); // Clears the text of the JTextField
+        txtdecrypted.setText(""); // Clears the text of the JTextField
 
     }//GEN-LAST:event_btnClearActionPerformed
 
@@ -404,7 +388,6 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
     private javax.swing.JButton clearbtn;
     private javax.swing.JButton encrypt;
     private javax.swing.JTextArea encryptedMessage;
-    private javax.swing.JTextField encryptedMessage1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -417,8 +400,9 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField messagetxt;
+    private javax.swing.JTextField shiftValueDecrypt;
     private javax.swing.JTextField shiftValuetxt;
-    private javax.swing.JTextField shiftValuetxt1;
     private javax.swing.JTextArea textResult;
+    private javax.swing.JTextField txtdecrypted;
     // End of variables declaration//GEN-END:variables
 }
