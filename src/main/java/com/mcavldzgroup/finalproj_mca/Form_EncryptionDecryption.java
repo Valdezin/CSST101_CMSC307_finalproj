@@ -51,7 +51,8 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         btnDecrypt = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        textResult = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        textResult = new javax.swing.JTextArea();
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setText("bala na kayo dito");
@@ -112,6 +113,11 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel7.setText("Enter the shift value:");
 
+        encryptedMessage1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        shiftValuetxt1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        btnDecrypt.setBackground(new java.awt.Color(102, 204, 0));
         btnDecrypt.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnDecrypt.setText("Decrypt");
         btnDecrypt.addActionListener(new java.awt.event.ActionListener() {
@@ -120,6 +126,7 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
             }
         });
 
+        btnClear.setBackground(new java.awt.Color(255, 51, 51));
         btnClear.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnClear.setText("Clear");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
@@ -130,6 +137,12 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel8.setText("Decrypted Message:");
+
+        textResult.setEditable(false);
+        textResult.setColumns(20);
+        textResult.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        textResult.setRows(5);
+        jScrollPane2.setViewportView(textResult);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -149,32 +162,30 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(shiftValuetxt, javax.swing.GroupLayout.DEFAULT_SIZE, 363, Short.MAX_VALUE)
                                         .addComponent(messagetxt, javax.swing.GroupLayout.DEFAULT_SIZE, 363, Short.MAX_VALUE)
-                                        .addComponent(shiftValuetxt1)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel5)
-                                                .addComponent(jLabel3))
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                                    .addComponent(jLabel6)
-                                    .addComponent(encryptedMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7)
+                                        .addComponent(jLabel5)
+                                        .addComponent(jLabel3))
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(clearbtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(encrypt, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel8)
-                                            .addComponent(textResult, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel4))
                                 .addGap(77, 77, 77))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(btnClear, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnDecrypt, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addGap(0, 0, Short.MAX_VALUE))))))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel7)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(shiftValuetxt1)
+                                        .addComponent(encryptedMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnDecrypt))
+                                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(53, 53, 53)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel8))
+                                .addContainerGap(77, Short.MAX_VALUE))))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,7 +209,7 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(clearbtn))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addGap(39, 39, 39)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jLabel6))
@@ -206,16 +217,16 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(encryptedMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(shiftValuetxt1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
+                        .addGap(64, 64, 64)
                         .addComponent(btnDecrypt)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnClear))
-                    .addComponent(textResult, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -256,26 +267,6 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_messagetxtActionPerformed
 
-    // Decryption method
-    private String caesarCipherDecrypt(String encryptedMessage, int shift) {
-        StringBuilder decryptedMessage = new StringBuilder();
-
-        for (int i = 0; i < encryptedMessage.length(); i++) {
-           char ch = encryptedMessage.charAt(i);
-
-            // Decrypt lowercase letters
-            if (Character.isLowerCase(ch)) {
-              ch = (char) ('a' + (ch - 'a' - shift + 26) % 26);
-            }
-
-            else if (Character.isUpperCase(ch)) {
-            ch = (char) ('A' + (ch - 'A' - shift + 26) % 26);
-        }
-
-        decryptedMessage.append(ch);  // Append the decrypted character
-      }
-    return decryptedMessage.toString();
-    }
     
     private void encryptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_encryptActionPerformed
         // TODO add your handling code here:
@@ -307,16 +298,32 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         try {
             // Retrieve the encrypted message and shift value from the text fields
             String encryptedMessageText = encryptedMessage.getText();
-            int shift = Integer.parseInt(shiftValuetxt.getText());
+            String shiftValueText = shiftValuetxt.getText();
+
+            // Check if either field is empty
+            if (encryptedMessageText.isEmpty() || shiftValueText.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Fill all the fields", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            // Try to parse the shift value to an integer
+            int shift;
+            try {
+                shift = Integer.parseInt(shiftValueText);
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Incorrect value in shift field", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
 
             // Decrypt the message using the Caesar cipher (reverse of encryption)
             String decrypted = caesarCipherDecrypt(encryptedMessageText, shift);
 
             // Display the decrypted message in the JTextArea
             textResult.setText(decrypted);
-        } catch (NumberFormatException e) {
-            // Handle invalid shift value input
 
+        } catch (Exception e) {
+            // Handle any unexpected exceptions
+            JOptionPane.showMessageDialog(null, "An error occurred: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnDecryptActionPerformed
 
@@ -327,7 +334,28 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         textResult.setText(""); // Clears the text of the JTextField
 
     }//GEN-LAST:event_btnClearActionPerformed
-    
+
+        // Decryption method
+    private String caesarCipherDecrypt(String encryptedMessage, int shift) {
+        StringBuilder decryptedMessage = new StringBuilder();
+
+        for (int i = 0; i < encryptedMessage.length(); i++) {
+           char ch = encryptedMessage.charAt(i);
+
+            // Decrypt lowercase letters
+            if (Character.isLowerCase(ch)) {
+              ch = (char) ('a' + (ch - 'a' - shift + 26) % 26);
+            }
+
+            else if (Character.isUpperCase(ch)) {
+            ch = (char) ('A' + (ch - 'A' - shift + 26) % 26);
+        }
+
+        decryptedMessage.append(ch);  // Append the decrypted character
+      }
+    return decryptedMessage.toString();
+    }
+        
     /**
      * @param args the command line arguments
      */
@@ -387,9 +415,10 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField messagetxt;
     private javax.swing.JTextField shiftValuetxt;
     private javax.swing.JTextField shiftValuetxt1;
-    private javax.swing.JTextField textResult;
+    private javax.swing.JTextArea textResult;
     // End of variables declaration//GEN-END:variables
 }
