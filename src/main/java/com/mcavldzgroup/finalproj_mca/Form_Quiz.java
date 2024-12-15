@@ -280,6 +280,9 @@ public class Form_Quiz extends javax.swing.JFrame {
         bnRetake = new javax.swing.JButton();
         bnExit1 = new javax.swing.JButton();
         lblTimeDone = new javax.swing.JLabel();
+        lblSummaryTitle = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tpSummary = new javax.swing.JTextArea();
         lblname = new javax.swing.JLabel();
         pb1 = new javax.swing.JProgressBar();
         labelName1 = new javax.swing.JLabel();
@@ -2166,7 +2169,7 @@ public class Form_Quiz extends javax.swing.JFrame {
 
         lblRemarks.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         lblRemarks.setForeground(new java.awt.Color(255, 255, 255));
-        lblRemarks.setText("--");
+        lblRemarks.setText(" --");
         lblRemarks.setToolTipText("");
 
         bnRetake.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -2189,6 +2192,16 @@ public class Form_Quiz extends javax.swing.JFrame {
         lblTimeDone.setForeground(new java.awt.Color(255, 255, 255));
         lblTimeDone.setText("Total Time: 00:00");
 
+        lblSummaryTitle.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblSummaryTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblSummaryTitle.setText("Summary:");
+        lblSummaryTitle.setToolTipText("");
+
+        tpSummary.setEditable(false);
+        tpSummary.setColumns(20);
+        tpSummary.setRows(5);
+        jScrollPane2.setViewportView(tpSummary);
+
         javax.swing.GroupLayout panelResultLayout = new javax.swing.GroupLayout(panelResult);
         panelResult.setLayout(panelResultLayout);
         panelResultLayout.setHorizontalGroup(
@@ -2196,39 +2209,46 @@ public class Form_Quiz extends javax.swing.JFrame {
             .addGroup(panelResultLayout.createSequentialGroup()
                 .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelResultLayout.createSequentialGroup()
-                        .addGap(318, 318, 318)
-                        .addComponent(jLabel37))
-                    .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelResultLayout.createSequentialGroup()
-                            .addGap(214, 214, 214)
-                            .addComponent(bnRetake)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bnExit1))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelResultLayout.createSequentialGroup()
-                            .addGap(230, 230, 230)
-                            .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblScore, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(panelResultLayout.createSequentialGroup()
-                                    .addGap(64, 64, 64)
-                                    .addComponent(lblTimeDone))))))
-                .addContainerGap(249, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResultLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lblRemarks, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(280, 280, 280))
+                        .addGap(214, 214, 214)
+                        .addComponent(bnRetake)
+                        .addGap(178, 178, 178)
+                        .addComponent(bnExit1))
+                    .addGroup(panelResultLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelResultLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblScore)
+                                    .addComponent(lblTimeDone)
+                                    .addComponent(lblRemarks, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel37))
+                        .addGap(26, 26, 26)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblSummaryTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
         panelResultLayout.setVerticalGroup(
             panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelResultLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblTimeDone)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblScore)
-                .addGap(18, 18, 18)
-                .addComponent(lblRemarks)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelResultLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(lblTimeDone)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblScore)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblRemarks)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResultLayout.createSequentialGroup()
+                        .addContainerGap(17, Short.MAX_VALUE)
+                        .addComponent(lblSummaryTitle)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)))
                 .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bnRetake)
                     .addComponent(bnExit1))
@@ -3179,6 +3199,7 @@ public class Form_Quiz extends javax.swing.JFrame {
 
     private void bnNext17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext17ActionPerformed
         String qans;
+        isIt = true;
         tbpane.remove(panel1);
         tbpane.remove(panelUser);
         tbpane.remove(panel2);
@@ -3224,11 +3245,16 @@ public class Form_Quiz extends javax.swing.JFrame {
         else if(score == 17){
             lblRemarks.setText("Excellent");
         }
-        
+
         String total = lblTimer.getText();
         lblTimeDone.setText("Total Time: " +total);
         
-        isIt = true;
+        
+        tpSummary.append("Player: " + name + "\n");
+        tpSummary.append("Score: " + score + "/17 - " + lblRemarks.getText() + "\n");
+        tpSummary.append(lblTimeDone.getText() + "\n");
+        tpSummary.append("------------------------------------------\n");
+        
     }//GEN-LAST:event_bnNext17ActionPerformed
 
     private void bnRetakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnRetakeActionPerformed
@@ -3337,14 +3363,10 @@ public class Form_Quiz extends javax.swing.JFrame {
 
     private void bnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnExitActionPerformed
      this.hide();
-     Form_MainMenu f1 = new Form_MainMenu();
-     f1.show();
     }//GEN-LAST:event_bnExitActionPerformed
 
     private void bnExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnExit1ActionPerformed
     this.hide();
-     Form_MainMenu f1 = new Form_MainMenu();
-     f1.show();        // TODO add your handling code here:
     }//GEN-LAST:event_bnExit1ActionPerformed
 
     /**
@@ -3373,6 +3395,12 @@ public class Form_Quiz extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Form_Quiz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -3444,9 +3472,11 @@ public class Form_Quiz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel labelName1;
     private javax.swing.JLabel lblRemarks;
     private javax.swing.JLabel lblScore;
+    private javax.swing.JLabel lblSummaryTitle;
     private javax.swing.JLabel lblTimeDone;
     private javax.swing.JLabel lblTimer;
     private javax.swing.JLabel lblname;
@@ -3540,5 +3570,6 @@ public class Form_Quiz extends javax.swing.JFrame {
     private javax.swing.JRadioButton rbChoice94;
     private javax.swing.JTabbedPane tbpane;
     private javax.swing.JTextField tfname;
+    private javax.swing.JTextArea tpSummary;
     // End of variables declaration//GEN-END:variables
 }
