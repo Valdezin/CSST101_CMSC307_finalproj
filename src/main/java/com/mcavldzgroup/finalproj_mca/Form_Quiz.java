@@ -35,6 +35,27 @@ public class Form_Quiz extends javax.swing.JFrame {
         pb1.setMinimum(0);
         pb1.setMaximum(18);
         ManageButtonGroup();
+        
+            tbpane.remove(panel1);
+            tbpane.add("User", panelUser);
+            tbpane.remove(panel2);
+            tbpane.remove(panel3);
+            tbpane.remove(panel4);
+            tbpane.remove(panel5);
+            tbpane.remove(panel6);
+            tbpane.remove(panel7);
+            tbpane.remove(panel8);
+            tbpane.remove(panel9);
+            tbpane.remove(panel10);
+            tbpane.remove(panel11);
+            tbpane.remove(panel12);
+            tbpane.remove(panel13);
+            tbpane.remove(panel14);
+            tbpane.remove(panel15);
+            tbpane.remove(panel16);
+            tbpane.remove(panel17);
+            tbpane.remove(panelResult);
+        
     }
     
      public void ManageButtonGroup(){
