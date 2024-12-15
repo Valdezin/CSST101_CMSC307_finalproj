@@ -3,19 +3,122 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mcavldzgroup.finalproj_mca;
+import java.awt.BorderLayout;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+import javax.swing.ButtonGroup;
+import javax.swing.Timer;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.TimerTask;
+
+
 
 /**
  *
  * @author VALDEZ
  */
 public class Form_Quiz extends javax.swing.JFrame {
+    String name;
+    int score = 0;
+    private Timer timer;
+    private int minutes = 0;
+    int counter = 10;
+    Boolean isIt = false;
 
     /**
      * Creates new form Form_Quiz
      */
     public Form_Quiz() {
         initComponents();
+        pb1.setMinimum(0);
+        pb1.setMaximum(18);
+        ManageButtonGroup();
     }
+    
+     public void ManageButtonGroup(){
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(rbChoice11);
+        bg.add(rbChoice12);
+        bg.add(rbChoice13);
+        bg.add(rbChoice14);
+        bg.add(rbChoice21);
+        bg.add(rbChoice22);
+        bg.add(rbChoice23);
+        bg.add(rbChoice24);
+        bg.add(rbChoice31);
+        bg.add(rbChoice32);
+        bg.add(rbChoice33);
+        bg.add(rbChoice34);
+        bg.add(rbChoice41);
+        bg.add(rbChoice42);
+        bg.add(rbChoice43);
+        bg.add(rbChoice44);
+        bg.add(rbChoice51);
+        bg.add(rbChoice52);
+        bg.add(rbChoice53);
+        bg.add(rbChoice54);
+        bg.add(rbChoice61);
+        bg.add(rbChoice62);
+        bg.add(rbChoice63);
+        bg.add(rbChoice64);
+        bg.add(rbChoice71);
+        bg.add(rbChoice72);
+        bg.add(rbChoice73);
+        bg.add(rbChoice74);
+        bg.add(rbChoice81);
+        bg.add(rbChoice82);
+        bg.add(rbChoice83);
+        bg.add(rbChoice84);
+        bg.add(rbChoice91);
+        bg.add(rbChoice92);
+        bg.add(rbChoice93);
+        bg.add(rbChoice94);
+        bg.add(rbChoice101);
+        bg.add(rbChoice102);
+        bg.add(rbChoice103);
+        bg.add(rbChoice104);
+        bg.add(rbChoice111);
+        bg.add(rbChoice112);
+        bg.add(rbChoice113);
+        bg.add(rbChoice114);
+        bg.add(rbChoice121);
+        bg.add(rbChoice122);
+        bg.add(rbChoice123);
+        bg.add(rbChoice124);
+        bg.add(rbChoice131);
+        bg.add(rbChoice132);
+        bg.add(rbChoice133);
+        bg.add(rbChoice134);
+        bg.add(rbChoice141);
+        bg.add(rbChoice142);
+        bg.add(rbChoice143);
+        bg.add(rbChoice144);
+        bg.add(rbChoice151);
+        bg.add(rbChoice152);
+        bg.add(rbChoice153);
+        bg.add(rbChoice154);
+        bg.add(rbChoice161);
+        bg.add(rbChoice162);
+        bg.add(rbChoice163);
+        bg.add(rbChoice164);
+        bg.add(rbChoice171);
+        bg.add(rbChoice172);
+        bg.add(rbChoice173);
+        bg.add(rbChoice174);
+
+     }
+    private void MsgAlert(String msg, int icon, String title)
+    {
+        JOptionPane opt = new JOptionPane();
+        opt.setMessage(msg);
+        opt.setMessageType(icon);
+        JDialog dialog = opt.createDialog(this,title);
+        dialog.setVisible(true);
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,39 +130,2168 @@ public class Form_Quiz extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        tbpane = new javax.swing.JTabbedPane();
+        panelUser = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        tfname = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        bnNext = new javax.swing.JButton();
+        bnExit = new javax.swing.JButton();
+        panel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        rbChoice11 = new javax.swing.JRadioButton();
+        rbChoice12 = new javax.swing.JRadioButton();
+        rbChoice13 = new javax.swing.JRadioButton();
+        rbChoice14 = new javax.swing.JRadioButton();
+        bnNext1 = new javax.swing.JButton();
+        panel2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        rbChoice21 = new javax.swing.JRadioButton();
+        rbChoice22 = new javax.swing.JRadioButton();
+        rbChoice23 = new javax.swing.JRadioButton();
+        rbChoice24 = new javax.swing.JRadioButton();
+        bnNext2 = new javax.swing.JButton();
+        panel3 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        rbChoice31 = new javax.swing.JRadioButton();
+        rbChoice32 = new javax.swing.JRadioButton();
+        rbChoice33 = new javax.swing.JRadioButton();
+        rbChoice34 = new javax.swing.JRadioButton();
+        bnNext3 = new javax.swing.JButton();
+        panel4 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        rbChoice41 = new javax.swing.JRadioButton();
+        rbChoice42 = new javax.swing.JRadioButton();
+        rbChoice43 = new javax.swing.JRadioButton();
+        rbChoice44 = new javax.swing.JRadioButton();
+        bnNext4 = new javax.swing.JButton();
+        panel5 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        rbChoice51 = new javax.swing.JRadioButton();
+        rbChoice52 = new javax.swing.JRadioButton();
+        rbChoice53 = new javax.swing.JRadioButton();
+        rbChoice54 = new javax.swing.JRadioButton();
+        bnNext5 = new javax.swing.JButton();
+        panel6 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        rbChoice61 = new javax.swing.JRadioButton();
+        rbChoice62 = new javax.swing.JRadioButton();
+        rbChoice63 = new javax.swing.JRadioButton();
+        rbChoice64 = new javax.swing.JRadioButton();
+        bnNext6 = new javax.swing.JButton();
+        panel7 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        rbChoice71 = new javax.swing.JRadioButton();
+        rbChoice72 = new javax.swing.JRadioButton();
+        rbChoice73 = new javax.swing.JRadioButton();
+        rbChoice74 = new javax.swing.JRadioButton();
+        bnNext7 = new javax.swing.JButton();
+        panel8 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        rbChoice81 = new javax.swing.JRadioButton();
+        rbChoice82 = new javax.swing.JRadioButton();
+        rbChoice83 = new javax.swing.JRadioButton();
+        rbChoice84 = new javax.swing.JRadioButton();
+        bnNext8 = new javax.swing.JButton();
+        panel9 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        rbChoice91 = new javax.swing.JRadioButton();
+        rbChoice92 = new javax.swing.JRadioButton();
+        rbChoice93 = new javax.swing.JRadioButton();
+        rbChoice94 = new javax.swing.JRadioButton();
+        bnNext9 = new javax.swing.JButton();
+        panel10 = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        rbChoice101 = new javax.swing.JRadioButton();
+        rbChoice102 = new javax.swing.JRadioButton();
+        rbChoice103 = new javax.swing.JRadioButton();
+        rbChoice104 = new javax.swing.JRadioButton();
+        bnNext10 = new javax.swing.JButton();
+        panel11 = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        rbChoice111 = new javax.swing.JRadioButton();
+        rbChoice112 = new javax.swing.JRadioButton();
+        rbChoice113 = new javax.swing.JRadioButton();
+        rbChoice114 = new javax.swing.JRadioButton();
+        bnNext11 = new javax.swing.JButton();
+        panel12 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        rbChoice121 = new javax.swing.JRadioButton();
+        rbChoice122 = new javax.swing.JRadioButton();
+        rbChoice123 = new javax.swing.JRadioButton();
+        rbChoice124 = new javax.swing.JRadioButton();
+        bnNext12 = new javax.swing.JButton();
+        panel13 = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        rbChoice131 = new javax.swing.JRadioButton();
+        rbChoice132 = new javax.swing.JRadioButton();
+        rbChoice133 = new javax.swing.JRadioButton();
+        rbChoice134 = new javax.swing.JRadioButton();
+        bnNext13 = new javax.swing.JButton();
+        panel14 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        rbChoice141 = new javax.swing.JRadioButton();
+        rbChoice142 = new javax.swing.JRadioButton();
+        rbChoice143 = new javax.swing.JRadioButton();
+        rbChoice144 = new javax.swing.JRadioButton();
+        bnNext14 = new javax.swing.JButton();
+        panel15 = new javax.swing.JPanel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        rbChoice151 = new javax.swing.JRadioButton();
+        rbChoice152 = new javax.swing.JRadioButton();
+        rbChoice153 = new javax.swing.JRadioButton();
+        rbChoice154 = new javax.swing.JRadioButton();
+        bnNext15 = new javax.swing.JButton();
+        panel16 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        rbChoice161 = new javax.swing.JRadioButton();
+        rbChoice162 = new javax.swing.JRadioButton();
+        rbChoice163 = new javax.swing.JRadioButton();
+        rbChoice164 = new javax.swing.JRadioButton();
+        bnNext16 = new javax.swing.JButton();
+        panel17 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        rbChoice171 = new javax.swing.JRadioButton();
+        rbChoice172 = new javax.swing.JRadioButton();
+        rbChoice173 = new javax.swing.JRadioButton();
+        rbChoice174 = new javax.swing.JRadioButton();
+        bnNext17 = new javax.swing.JButton();
+        panelResult = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        lblScore = new javax.swing.JLabel();
+        lblRemarks = new javax.swing.JLabel();
+        bnRetake = new javax.swing.JButton();
+        bnExit1 = new javax.swing.JButton();
+        lblTimeDone = new javax.swing.JLabel();
+        lblname = new javax.swing.JLabel();
+        pb1 = new javax.swing.JProgressBar();
+        labelName1 = new javax.swing.JLabel();
+        lblTimer = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setText("QUIZ");
+        tbpane.setBackground(new java.awt.Color(102, 153, 0));
+        tbpane.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel2.setText("bala na kayo dito");
+        panelUser.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Welcome to our Quiz Page!");
+
+        tfname.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Enter your name:");
+
+        bnNext.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext.setText("Next");
+        bnNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNextActionPerformed(evt);
+            }
+        });
+
+        bnExit.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnExit.setText("Exit");
+        bnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnExitActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelUserLayout = new javax.swing.GroupLayout(panelUser);
+        panelUser.setLayout(panelUserLayout);
+        panelUserLayout.setHorizontalGroup(
+            panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelUserLayout.createSequentialGroup()
+                .addContainerGap(214, Short.MAX_VALUE)
+                .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfname, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(184, 184, 184))
+            .addGroup(panelUserLayout.createSequentialGroup()
+                .addGap(305, 305, 305)
+                .addComponent(bnNext)
+                .addGap(52, 52, 52)
+                .addComponent(bnExit)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panelUserLayout.setVerticalGroup(
+            panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelUserLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfname, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bnNext)
+                    .addComponent(bnExit))
+                .addGap(41, 41, 41))
+        );
+
+        tbpane.addTab("USER", panelUser);
+
+        panel1.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel4.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Question #1");
+
+        jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("What is the definition of a prime number?");
+
+        rbChoice11.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice11.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice11.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice11.setText("A number that is divisible by only 1 and itself");
+        rbChoice11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice11ActionPerformed(evt);
+            }
+        });
+
+        rbChoice12.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice12.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice12.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice12.setText("A number that is divisible by 2");
+        rbChoice12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice12ActionPerformed(evt);
+            }
+        });
+
+        rbChoice13.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice13.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice13.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice13.setText("A number that is divisible by 3");
+        rbChoice13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice13ActionPerformed(evt);
+            }
+        });
+
+        rbChoice14.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice14.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice14.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice14.setText("A number greater than 10");
+        rbChoice14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice14ActionPerformed(evt);
+            }
+        });
+
+        bnNext1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext1.setText("Next");
+        bnNext1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
+        panel1.setLayout(panel1Layout);
+        panel1Layout.setHorizontalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel1Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel1Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel3))
+                    .addGroup(panel1Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice12)
+                            .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(rbChoice11)
+                                .addComponent(rbChoice13, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(rbChoice14, javax.swing.GroupLayout.Alignment.LEADING)))))
+                .addContainerGap(184, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext1)
+                .addGap(95, 95, 95))
+        );
+        panel1Layout.setVerticalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext1)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q1", panel1);
+
+        panel2.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel5.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Question #2");
+
+        jLabel6.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("What is the value of  4 + 5 ?");
+
+        rbChoice21.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice21.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice21.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice21.setText("8");
+        rbChoice21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice21ActionPerformed(evt);
+            }
+        });
+
+        rbChoice22.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice22.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice22.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice22.setText("9");
+        rbChoice22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice22ActionPerformed(evt);
+            }
+        });
+
+        rbChoice23.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice23.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice23.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice23.setText("10");
+        rbChoice23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice23ActionPerformed(evt);
+            }
+        });
+
+        rbChoice24.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice24.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice24.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice24.setText("11");
+        rbChoice24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice24ActionPerformed(evt);
+            }
+        });
+
+        bnNext2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext2.setText("Next");
+        bnNext2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel2Layout = new javax.swing.GroupLayout(panel2);
+        panel2.setLayout(panel2Layout);
+        panel2Layout.setHorizontalGroup(
+            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel2Layout.createSequentialGroup()
+                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel2Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel2Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel6))
+                    .addGroup(panel2Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice22)
+                            .addComponent(rbChoice23)
+                            .addComponent(rbChoice24)
+                            .addComponent(rbChoice21))))
+                .addContainerGap(322, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext2)
+                .addGap(95, 95, 95))
+        );
+        panel2Layout.setVerticalGroup(
+            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel2Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice23)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext2)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q2", panel2);
+
+        panel3.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Question #3");
+
+        jLabel8.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("What is the perimeter of a square with a side length of 5 cm?");
+
+        rbChoice31.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice31.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice31.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice31.setText("10 CM");
+        rbChoice31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice31ActionPerformed(evt);
+            }
+        });
+
+        rbChoice32.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice32.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice32.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice32.setText("15 CM");
+        rbChoice32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice32ActionPerformed(evt);
+            }
+        });
+
+        rbChoice33.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice33.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice33.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice33.setText("20 CM");
+        rbChoice33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice33ActionPerformed(evt);
+            }
+        });
+
+        rbChoice34.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice34.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice34.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice34.setText("25 CM");
+        rbChoice34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice34ActionPerformed(evt);
+            }
+        });
+
+        bnNext3.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext3.setText("Next");
+        bnNext3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel3Layout = new javax.swing.GroupLayout(panel3);
+        panel3.setLayout(panel3Layout);
+        panel3Layout.setHorizontalGroup(
+            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel3Layout.createSequentialGroup()
+                .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel3Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel3Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice32)
+                            .addComponent(rbChoice33)
+                            .addComponent(rbChoice34)
+                            .addComponent(rbChoice31))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
+                        .addComponent(bnNext3)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(74, 74, 74))))
+        );
+        panel3Layout.setVerticalGroup(
+            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel3Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel8)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext3)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q3", panel3);
+
+        panel4.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel9.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Question #4");
+
+        jLabel10.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Which of the following is an example of a whole number?");
+
+        rbChoice41.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice41.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice41.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice41.setText("-3");
+        rbChoice41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice41ActionPerformed(evt);
+            }
+        });
+
+        rbChoice42.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice42.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice42.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice42.setText("0");
+        rbChoice42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice42ActionPerformed(evt);
+            }
+        });
+
+        rbChoice43.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice43.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice43.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice43.setText("2.5");
+        rbChoice43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice43ActionPerformed(evt);
+            }
+        });
+
+        rbChoice44.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice44.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice44.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice44.setText("-1.5");
+        rbChoice44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice44ActionPerformed(evt);
+            }
+        });
+
+        bnNext4.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext4.setText("Next");
+        bnNext4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel4Layout = new javax.swing.GroupLayout(panel4);
+        panel4.setLayout(panel4Layout);
+        panel4Layout.setHorizontalGroup(
+            panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel4Layout.createSequentialGroup()
+                .addGroup(panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel4Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel4Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice42)
+                            .addComponent(rbChoice43)
+                            .addComponent(rbChoice44)
+                            .addComponent(rbChoice41))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10)
+                    .addComponent(bnNext4))
+                .addGap(95, 95, 95))
+        );
+        panel4Layout.setVerticalGroup(
+            panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel4Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel10)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice41)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice42)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice43)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext4)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q4", panel4);
+
+        panel5.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel11.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Question #5");
+
+        jLabel12.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("What is the term for a number that divides another number exactly?");
+
+        rbChoice51.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice51.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice51.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice51.setText("Multiple");
+        rbChoice51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice51ActionPerformed(evt);
+            }
+        });
+
+        rbChoice52.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice52.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice52.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice52.setText("Factor");
+        rbChoice52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice52ActionPerformed(evt);
+            }
+        });
+
+        rbChoice53.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice53.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice53.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice53.setText("Prime");
+        rbChoice53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice53ActionPerformed(evt);
+            }
+        });
+
+        rbChoice54.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice54.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice54.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice54.setText("Sum");
+        rbChoice54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice54ActionPerformed(evt);
+            }
+        });
+
+        bnNext5.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext5.setText("Next");
+        bnNext5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext5ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel5Layout = new javax.swing.GroupLayout(panel5);
+        panel5.setLayout(panel5Layout);
+        panel5Layout.setHorizontalGroup(
+            panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel5Layout.createSequentialGroup()
+                .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel5Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel5Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice52)
+                            .addComponent(rbChoice53)
+                            .addComponent(rbChoice54)
+                            .addComponent(rbChoice51))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
+                .addGap(0, 57, Short.MAX_VALUE)
+                .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
+                        .addComponent(bnNext5)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addGap(39, 39, 39))))
+        );
+        panel5Layout.setVerticalGroup(
+            panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel5Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel12)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice51)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice52)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice53)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice54)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext5)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q5", panel5);
+
+        panel6.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel13.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Question #6");
+
+        jLabel14.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("What is the solution to 5x=20?");
+
+        rbChoice61.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice61.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice61.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice61.setText("x = 5");
+        rbChoice61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice61ActionPerformed(evt);
+            }
+        });
+
+        rbChoice62.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice62.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice62.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice62.setText("x = 4");
+        rbChoice62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice62ActionPerformed(evt);
+            }
+        });
+
+        rbChoice63.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice63.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice63.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice63.setText("x = 3");
+        rbChoice63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice63ActionPerformed(evt);
+            }
+        });
+
+        rbChoice64.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice64.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice64.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice64.setText("x = 2");
+        rbChoice64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice64ActionPerformed(evt);
+            }
+        });
+
+        bnNext6.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext6.setText("Next");
+        bnNext6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext6ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel6Layout = new javax.swing.GroupLayout(panel6);
+        panel6.setLayout(panel6Layout);
+        panel6Layout.setHorizontalGroup(
+            panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel6Layout.createSequentialGroup()
+                .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel6Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel6Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel14))
+                    .addGroup(panel6Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice62)
+                            .addComponent(rbChoice63)
+                            .addComponent(rbChoice64)
+                            .addComponent(rbChoice61))))
+                .addContainerGap(295, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext6)
+                .addGap(95, 95, 95))
+        );
+        panel6Layout.setVerticalGroup(
+            panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel6Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel14)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice61)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice62)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice63)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice64)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext6)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q6", panel6);
+
+        panel7.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel15.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Question #7");
+
+        jLabel16.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("What is the value of √16 ?");
+
+        rbChoice71.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice71.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice71.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice71.setText("4");
+        rbChoice71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice71ActionPerformed(evt);
+            }
+        });
+
+        rbChoice72.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice72.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice72.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice72.setText("2");
+        rbChoice72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice72ActionPerformed(evt);
+            }
+        });
+
+        rbChoice73.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice73.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice73.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice73.setText("8");
+        rbChoice73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice73ActionPerformed(evt);
+            }
+        });
+
+        rbChoice74.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice74.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice74.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice74.setText("6");
+        rbChoice74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice74ActionPerformed(evt);
+            }
+        });
+
+        bnNext7.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext7.setText("Next");
+        bnNext7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext7ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel7Layout = new javax.swing.GroupLayout(panel7);
+        panel7.setLayout(panel7Layout);
+        panel7Layout.setHorizontalGroup(
+            panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel7Layout.createSequentialGroup()
+                .addGroup(panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel7Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel7Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel16))
+                    .addGroup(panel7Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice72)
+                            .addComponent(rbChoice73)
+                            .addComponent(rbChoice74)
+                            .addComponent(rbChoice71))))
+                .addContainerGap(340, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel7Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext7)
+                .addGap(95, 95, 95))
+        );
+        panel7Layout.setVerticalGroup(
+            panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel7Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel16)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice71)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice72)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice73)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice74)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext7)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q7", panel7);
+
+        panel8.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel17.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Question #8");
+
+        jLabel18.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("What is the value of  10 - 3 ?");
+
+        rbChoice81.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice81.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice81.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice81.setText("1");
+        rbChoice81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice81ActionPerformed(evt);
+            }
+        });
+
+        rbChoice82.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice82.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice82.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice82.setText("3");
+        rbChoice82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice82ActionPerformed(evt);
+            }
+        });
+
+        rbChoice83.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice83.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice83.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice83.setText("5");
+        rbChoice83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice83ActionPerformed(evt);
+            }
+        });
+
+        rbChoice84.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice84.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice84.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice84.setText("7");
+        rbChoice84.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice84ActionPerformed(evt);
+            }
+        });
+
+        bnNext8.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext8.setText("Next");
+        bnNext8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext8ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel8Layout = new javax.swing.GroupLayout(panel8);
+        panel8.setLayout(panel8Layout);
+        panel8Layout.setHorizontalGroup(
+            panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel8Layout.createSequentialGroup()
+                .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel8Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel8Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel18))
+                    .addGroup(panel8Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice82)
+                            .addComponent(rbChoice83)
+                            .addComponent(rbChoice84)
+                            .addComponent(rbChoice81))))
+                .addContainerGap(316, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel8Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext8)
+                .addGap(95, 95, 95))
+        );
+        panel8Layout.setVerticalGroup(
+            panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel8Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel18)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice81)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice82)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice83)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice84)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext8)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q8", panel8);
+
+        panel9.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel19.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Question #9");
+
+        jLabel20.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("What does the term \"quotient\" refer to in division?");
+
+        rbChoice91.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice91.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice91.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice91.setText("The number being divided");
+        rbChoice91.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice91ActionPerformed(evt);
+            }
+        });
+
+        rbChoice92.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice92.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice92.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice92.setText("The result of the division");
+        rbChoice92.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice92ActionPerformed(evt);
+            }
+        });
+
+        rbChoice93.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice93.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice93.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice93.setText("The divisor");
+        rbChoice93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice93ActionPerformed(evt);
+            }
+        });
+
+        rbChoice94.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice94.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice94.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice94.setText("The sum of the numbers");
+        rbChoice94.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice94ActionPerformed(evt);
+            }
+        });
+
+        bnNext9.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext9.setText("Next");
+        bnNext9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext9ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel9Layout = new javax.swing.GroupLayout(panel9);
+        panel9.setLayout(panel9Layout);
+        panel9Layout.setHorizontalGroup(
+            panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel9Layout.createSequentialGroup()
+                .addGroup(panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel9Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel9Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice92)
+                            .addComponent(rbChoice93)
+                            .addComponent(rbChoice94)
+                            .addComponent(rbChoice91))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
+                        .addComponent(bnNext9)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addGap(133, 133, 133))))
+        );
+        panel9Layout.setVerticalGroup(
+            panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel9Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel20)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice91)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice92)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice93)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice94)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext9)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q9", panel9);
+
+        panel10.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel21.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Question #10");
+
+        jLabel22.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Which of the following is a right angle?");
+
+        rbChoice101.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice101.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice101.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice101.setText("45 degrees");
+        rbChoice101.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice101ActionPerformed(evt);
+            }
+        });
+
+        rbChoice102.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice102.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice102.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice102.setText("90 degrees");
+        rbChoice102.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice102ActionPerformed(evt);
+            }
+        });
+
+        rbChoice103.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice103.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice103.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice103.setText("120 degrees");
+        rbChoice103.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice103ActionPerformed(evt);
+            }
+        });
+
+        rbChoice104.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice104.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice104.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice104.setText("180 degrees");
+        rbChoice104.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice104ActionPerformed(evt);
+            }
+        });
+
+        bnNext10.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext10.setText("Next");
+        bnNext10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext10ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel10Layout = new javax.swing.GroupLayout(panel10);
+        panel10.setLayout(panel10Layout);
+        panel10Layout.setHorizontalGroup(
+            panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel10Layout.createSequentialGroup()
+                .addGroup(panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel10Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel10Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel22))
+                    .addGroup(panel10Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice102)
+                            .addComponent(rbChoice103)
+                            .addComponent(rbChoice104)
+                            .addComponent(rbChoice101))))
+                .addContainerGap(210, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel10Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext10)
+                .addGap(95, 95, 95))
+        );
+        panel10Layout.setVerticalGroup(
+            panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel10Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel22)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice101)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice102)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice103)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice104)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext10)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q10", panel10);
+
+        panel11.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel23.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("Question #11");
+
+        jLabel24.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("What's the middle number in a range called?");
+
+        rbChoice111.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice111.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice111.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice111.setText("Mean");
+        rbChoice111.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice111ActionPerformed(evt);
+            }
+        });
+
+        rbChoice112.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice112.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice112.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice112.setText("Mode");
+        rbChoice112.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice112ActionPerformed(evt);
+            }
+        });
+
+        rbChoice113.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice113.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice113.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice113.setText("Median");
+        rbChoice113.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice113ActionPerformed(evt);
+            }
+        });
+
+        rbChoice114.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice114.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice114.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice114.setText("Range");
+        rbChoice114.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice114ActionPerformed(evt);
+            }
+        });
+
+        bnNext11.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext11.setText("Next");
+        bnNext11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext11ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel11Layout = new javax.swing.GroupLayout(panel11);
+        panel11.setLayout(panel11Layout);
+        panel11Layout.setHorizontalGroup(
+            panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel11Layout.createSequentialGroup()
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel11Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel11Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice112)
+                            .addComponent(rbChoice113)
+                            .addComponent(rbChoice114)
+                            .addComponent(rbChoice111))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                .addGap(0, 169, Short.MAX_VALUE)
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                        .addComponent(bnNext11)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                        .addComponent(jLabel24)
+                        .addGap(166, 166, 166))))
+        );
+        panel11Layout.setVerticalGroup(
+            panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel11Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel24)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice111)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice112)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice113)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice114)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext11)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q11", panel11);
+
+        panel12.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel25.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Question #12");
+
+        jLabel26.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("What is the sum of  7 + 3?");
+
+        rbChoice121.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice121.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice121.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice121.setText("9");
+        rbChoice121.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice121ActionPerformed(evt);
+            }
+        });
+
+        rbChoice122.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice122.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice122.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice122.setText("10");
+        rbChoice122.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice122ActionPerformed(evt);
+            }
+        });
+
+        rbChoice123.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice123.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice123.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice123.setText("11");
+        rbChoice123.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice123ActionPerformed(evt);
+            }
+        });
+
+        rbChoice124.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice124.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice124.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice124.setText("12");
+        rbChoice124.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice124ActionPerformed(evt);
+            }
+        });
+
+        bnNext12.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext12.setText("Next");
+        bnNext12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext12ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel12Layout = new javax.swing.GroupLayout(panel12);
+        panel12.setLayout(panel12Layout);
+        panel12Layout.setHorizontalGroup(
+            panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel12Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext12)
+                .addGap(95, 95, 95))
+            .addGroup(panel12Layout.createSequentialGroup()
+                .addGroup(panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel12Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel12Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice122)
+                            .addComponent(rbChoice123)
+                            .addComponent(rbChoice124)
+                            .addComponent(rbChoice121)))
+                    .addGroup(panel12Layout.createSequentialGroup()
+                        .addGap(230, 230, 230)
+                        .addComponent(jLabel26)))
+                .addContainerGap(292, Short.MAX_VALUE))
+        );
+        panel12Layout.setVerticalGroup(
+            panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel12Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel26)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice121)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice122)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice123)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice124)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext12)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q12", panel12);
+
+        panel13.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel27.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("Question #13");
+
+        jLabel28.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setText("Which of the following is an example of a decimal number?");
+
+        rbChoice131.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice131.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice131.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice131.setText("4");
+        rbChoice131.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice131ActionPerformed(evt);
+            }
+        });
+
+        rbChoice132.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice132.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice132.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice132.setText("4.5");
+        rbChoice132.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice132ActionPerformed(evt);
+            }
+        });
+
+        rbChoice133.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice133.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice133.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice133.setText("7");
+        rbChoice133.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice133ActionPerformed(evt);
+            }
+        });
+
+        rbChoice134.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice134.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice134.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice134.setText("9");
+        rbChoice134.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice134ActionPerformed(evt);
+            }
+        });
+
+        bnNext13.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext13.setText("Next");
+        bnNext13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext13ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel13Layout = new javax.swing.GroupLayout(panel13);
+        panel13.setLayout(panel13Layout);
+        panel13Layout.setHorizontalGroup(
+            panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel13Layout.createSequentialGroup()
+                .addGroup(panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel13Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel13Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice132)
+                            .addComponent(rbChoice133)
+                            .addComponent(rbChoice134)
+                            .addComponent(rbChoice131))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
+                        .addComponent(bnNext13)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
+                        .addComponent(jLabel28)
+                        .addGap(79, 79, 79))))
+        );
+        panel13Layout.setVerticalGroup(
+            panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel13Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel28)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice131)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice132)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice133)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice134)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext13)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q13", panel13);
+
+        panel14.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel29.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("Question #14");
+
+        jLabel30.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("What is the term for the distance around a circle?");
+
+        rbChoice141.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice141.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice141.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice141.setText("Area");
+        rbChoice141.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice141ActionPerformed(evt);
+            }
+        });
+
+        rbChoice142.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice142.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice142.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice142.setText("Radius");
+        rbChoice142.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice142ActionPerformed(evt);
+            }
+        });
+
+        rbChoice143.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice143.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice143.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice143.setText("Circumference");
+        rbChoice143.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice143ActionPerformed(evt);
+            }
+        });
+
+        rbChoice144.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice144.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice144.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice144.setText("Diameter");
+        rbChoice144.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice144ActionPerformed(evt);
+            }
+        });
+
+        bnNext14.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext14.setText("Next");
+        bnNext14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext14ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel14Layout = new javax.swing.GroupLayout(panel14);
+        panel14.setLayout(panel14Layout);
+        panel14Layout.setHorizontalGroup(
+            panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel14Layout.createSequentialGroup()
+                .addGroup(panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel14Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel14Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice142)
+                            .addComponent(rbChoice143)
+                            .addComponent(rbChoice144)
+                            .addComponent(rbChoice141))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
+                        .addComponent(bnNext14)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
+                        .addComponent(jLabel30)
+                        .addGap(140, 140, 140))))
+        );
+        panel14Layout.setVerticalGroup(
+            panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel14Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel30)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice141)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice142)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice143)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice144)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext14)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q14", panel14);
+
+        panel15.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel31.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setText("Question #15");
+
+        jLabel32.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("What is the value of  2 * 6?");
+
+        rbChoice151.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice151.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice151.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice151.setText("10");
+        rbChoice151.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice151ActionPerformed(evt);
+            }
+        });
+
+        rbChoice152.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice152.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice152.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice152.setText("12");
+        rbChoice152.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice152ActionPerformed(evt);
+            }
+        });
+
+        rbChoice153.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice153.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice153.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice153.setText("14");
+        rbChoice153.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice153ActionPerformed(evt);
+            }
+        });
+
+        rbChoice154.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice154.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice154.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice154.setText("16");
+        rbChoice154.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice154ActionPerformed(evt);
+            }
+        });
+
+        bnNext15.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext15.setText("Next");
+        bnNext15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext15ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel15Layout = new javax.swing.GroupLayout(panel15);
+        panel15.setLayout(panel15Layout);
+        panel15Layout.setHorizontalGroup(
+            panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel15Layout.createSequentialGroup()
+                .addGroup(panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel15Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel15Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jLabel32))
+                    .addGroup(panel15Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice152)
+                            .addComponent(rbChoice153)
+                            .addComponent(rbChoice154)
+                            .addComponent(rbChoice151))))
+                .addContainerGap(331, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel15Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext15)
+                .addGap(95, 95, 95))
+        );
+        panel15Layout.setVerticalGroup(
+            panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel15Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel32)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice151)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice152)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice153)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice154)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext15)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q15", panel15);
+
+        panel16.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel33.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setText("Question #16");
+
+        jLabel34.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setText("What is a number that is not a whole number and has a decimal part?");
+
+        rbChoice161.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice161.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice161.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice161.setText("Integer");
+        rbChoice161.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice161ActionPerformed(evt);
+            }
+        });
+
+        rbChoice162.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice162.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice162.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice162.setText("Rational Number");
+        rbChoice162.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice162ActionPerformed(evt);
+            }
+        });
+
+        rbChoice163.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice163.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice163.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice163.setText("Irrational Number");
+        rbChoice163.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice163ActionPerformed(evt);
+            }
+        });
+
+        rbChoice164.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice164.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice164.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice164.setText("Decimal Number");
+        rbChoice164.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice164ActionPerformed(evt);
+            }
+        });
+
+        bnNext16.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext16.setText("Next");
+        bnNext16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext16ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel16Layout = new javax.swing.GroupLayout(panel16);
+        panel16.setLayout(panel16Layout);
+        panel16Layout.setHorizontalGroup(
+            panel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel16Layout.createSequentialGroup()
+                .addGroup(panel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel16Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice162)
+                            .addComponent(rbChoice163)
+                            .addComponent(rbChoice164)
+                            .addComponent(rbChoice161)))
+                    .addGroup(panel16Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addGroup(panel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panel16Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel34))
+                            .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(48, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel16Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bnNext16)
+                .addGap(95, 95, 95))
+        );
+        panel16Layout.setVerticalGroup(
+            panel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel16Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel34)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice161)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice162)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice163)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice164)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext16)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q16", panel16);
+
+        panel17.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel35.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("Question #17");
+
+        jLabel36.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setText("What is the term for the highest number in a set of data?");
+
+        rbChoice171.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice171.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice171.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice171.setText("Mode");
+        rbChoice171.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice171ActionPerformed(evt);
+            }
+        });
+
+        rbChoice172.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice172.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice172.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice172.setText("Median");
+        rbChoice172.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice172ActionPerformed(evt);
+            }
+        });
+
+        rbChoice173.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice173.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice173.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice173.setText("Maximum");
+        rbChoice173.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice173ActionPerformed(evt);
+            }
+        });
+
+        rbChoice174.setBackground(new java.awt.Color(102, 153, 0));
+        rbChoice174.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        rbChoice174.setForeground(new java.awt.Color(255, 255, 255));
+        rbChoice174.setText("Minimum");
+        rbChoice174.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbChoice174ActionPerformed(evt);
+            }
+        });
+
+        bnNext17.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnNext17.setText("Next");
+        bnNext17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnNext17ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel17Layout = new javax.swing.GroupLayout(panel17);
+        panel17.setLayout(panel17Layout);
+        panel17Layout.setHorizontalGroup(
+            panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel17Layout.createSequentialGroup()
+                .addGroup(panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel17Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel17Layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
+                        .addGroup(panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rbChoice172)
+                            .addComponent(rbChoice173)
+                            .addComponent(rbChoice174)
+                            .addComponent(rbChoice171))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
+                .addGap(0, 125, Short.MAX_VALUE)
+                .addGroup(panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
+                        .addComponent(bnNext17)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
+                        .addComponent(jLabel36)
+                        .addGap(86, 86, 86))))
+        );
+        panel17Layout.setVerticalGroup(
+            panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel17Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel36)
+                .addGap(18, 18, 18)
+                .addComponent(rbChoice171)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice172)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice173)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbChoice174)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(bnNext17)
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Q17", panel17);
+
+        panelResult.setBackground(new java.awt.Color(102, 153, 0));
+
+        jLabel37.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setText("Result");
+
+        lblScore.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblScore.setForeground(new java.awt.Color(255, 255, 255));
+        lblScore.setText("You got a score of -- out of 17!");
+
+        lblRemarks.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblRemarks.setForeground(new java.awt.Color(255, 255, 255));
+        lblRemarks.setText("--");
+        lblRemarks.setToolTipText("");
+
+        bnRetake.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnRetake.setText("Retake");
+        bnRetake.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnRetakeActionPerformed(evt);
+            }
+        });
+
+        bnExit1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnExit1.setText("Exit");
+        bnExit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnExit1ActionPerformed(evt);
+            }
+        });
+
+        lblTimeDone.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblTimeDone.setForeground(new java.awt.Color(255, 255, 255));
+        lblTimeDone.setText("Total Time: 00:00");
+
+        javax.swing.GroupLayout panelResultLayout = new javax.swing.GroupLayout(panelResult);
+        panelResult.setLayout(panelResultLayout);
+        panelResultLayout.setHorizontalGroup(
+            panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelResultLayout.createSequentialGroup()
+                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelResultLayout.createSequentialGroup()
+                        .addGap(318, 318, 318)
+                        .addComponent(jLabel37))
+                    .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelResultLayout.createSequentialGroup()
+                            .addGap(214, 214, 214)
+                            .addComponent(bnRetake)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(bnExit1))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelResultLayout.createSequentialGroup()
+                            .addGap(230, 230, 230)
+                            .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblScore, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(panelResultLayout.createSequentialGroup()
+                                    .addGap(64, 64, 64)
+                                    .addComponent(lblTimeDone))))))
+                .addContainerGap(249, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResultLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblRemarks, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(280, 280, 280))
+        );
+        panelResultLayout.setVerticalGroup(
+            panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelResultLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblTimeDone)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblScore)
+                .addGap(18, 18, 18)
+                .addComponent(lblRemarks)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bnRetake)
+                    .addComponent(bnExit1))
+                .addGap(27, 27, 27))
+        );
+
+        tbpane.addTab("Result", panelResult);
+
+        lblname.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+
+        pb1.setMaximum(18);
+        pb1.setStringPainted(true);
+
+        labelName1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        labelName1.setText("Name:");
+
+        lblTimer.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        lblTimer.setText("00:00");
+        lblTimer.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                lblTimerPropertyChange(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel1))
+                        .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 789, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(64, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(291, 291, 291)
-                        .addComponent(jLabel2)))
-                .addContainerGap(308, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pb1, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(labelName1)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblname, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblTimer, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(95, 95, 95))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel1)
-                .addGap(140, 140, 140)
-                .addComponent(jLabel2)
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblname, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelName1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pb1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(lblTimer, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -77,10 +2309,1049 @@ public class Form_Quiz extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void bnNext3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext3ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.add("Q4", panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice33.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext3ActionPerformed
+
+    private void rbChoice34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice34ActionPerformed
+
+    private void rbChoice33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice33ActionPerformed
+
+    private void rbChoice32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice32ActionPerformed
+
+    private void rbChoice31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice31ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice31ActionPerformed
+
+    private void bnNext2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext2ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.add("Q3",panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice22.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext2ActionPerformed
+
+    private void rbChoice24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice24ActionPerformed
+
+    private void rbChoice23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice23ActionPerformed
+
+    private void rbChoice22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice22ActionPerformed
+
+    private void rbChoice21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice21ActionPerformed
+
+    private void bnNext1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext1ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.add("Q2" , panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice11.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext1ActionPerformed
+
+    private void rbChoice14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice14ActionPerformed
+
+    private void rbChoice13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice13ActionPerformed
+
+    private void rbChoice12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice12ActionPerformed
+
+    private void rbChoice11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice11ActionPerformed
+
+    private void bnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNextActionPerformed
+
+        name =  tfname.getText();
+
+        if(!tfname.getText().isEmpty()){
+            lblname.setText(name);
+            tbpane.add("Q1",panel1);
+            tbpane.remove(panelUser);
+            tbpane.remove(panel2);
+            tbpane.remove(panel3);
+            tbpane.remove(panel4);
+            tbpane.remove(panel5);
+            tbpane.remove(panel6);
+            tbpane.remove(panel7);
+            tbpane.remove(panel8);
+            tbpane.remove(panel9);
+            tbpane.remove(panel10);
+            tbpane.remove(panel11);
+            tbpane.remove(panel12);
+            tbpane.remove(panel13);
+            tbpane.remove(panel14);
+            tbpane.remove(panel15);
+            tbpane.remove(panel16);
+            tbpane.remove(panel17);
+            tbpane.remove(panelResult);
+            int currentValue = pb1.getValue();
+            pb1.setValue(currentValue + 1);
+        }
+        else{
+            MsgAlert("Make sure to enter your name please!", JOptionPane.ERROR_MESSAGE, "Error!");
+        }
+        java.util.Timer timer = new java.util.Timer(); //new timer
+        counter = 0; // Start the counter from 0
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                int minutes = counter / 60;
+                int seconds = counter % 60;
+                lblTimer.setText(String.format("%02d:%02d", minutes, seconds)); // Update the label with MM:SS format
+                counter++; // Increment the counter
+                if (isIt) { // Stop condition
+                    timer.cancel();
+                    isIt = false; // Reset the flag
+                }
+            }
+        };
+
+        // Schedule the timer to run every second (1000 milliseconds)
+        timer.scheduleAtFixedRate(task, 0, 1000);
+
+    }//GEN-LAST:event_bnNextActionPerformed
+
+    private void rbChoice41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice41ActionPerformed
+
+    private void rbChoice42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice42ActionPerformed
+
+    private void rbChoice43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice43ActionPerformed
+
+    private void rbChoice44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice44ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice44ActionPerformed
+
+    private void bnNext4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext4ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.add("Q5", panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice42.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext4ActionPerformed
+
+    private void rbChoice51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice51ActionPerformed
+
+    private void rbChoice52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice52ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice52ActionPerformed
+
+    private void rbChoice53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice53ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice53ActionPerformed
+
+    private void rbChoice54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice54ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice54ActionPerformed
+
+    private void bnNext5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext5ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.add("Q6", panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice52.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext5ActionPerformed
+
+    private void rbChoice61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice61ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice61ActionPerformed
+
+    private void rbChoice62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice62ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice62ActionPerformed
+
+    private void rbChoice63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice63ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice63ActionPerformed
+
+    private void rbChoice64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice64ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice64ActionPerformed
+
+    private void bnNext6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext6ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.add("Q7",panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice62.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext6ActionPerformed
+
+    private void rbChoice71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice71ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice71ActionPerformed
+
+    private void rbChoice72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice72ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice72ActionPerformed
+
+    private void rbChoice73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice73ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice73ActionPerformed
+
+    private void rbChoice74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice74ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice74ActionPerformed
+
+    private void bnNext7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext7ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.add("Q8", panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice71.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext7ActionPerformed
+
+    private void rbChoice81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice81ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice81ActionPerformed
+
+    private void rbChoice82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice82ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice82ActionPerformed
+
+    private void rbChoice83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice83ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice83ActionPerformed
+
+    private void rbChoice84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice84ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice84ActionPerformed
+
+    private void bnNext8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext8ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.add("Q9", panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice84.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext8ActionPerformed
+
+    private void rbChoice91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice91ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice91ActionPerformed
+
+    private void rbChoice92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice92ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice92ActionPerformed
+
+    private void rbChoice93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice93ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice93ActionPerformed
+
+    private void rbChoice94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice94ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice94ActionPerformed
+
+    private void bnNext9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext9ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.add("Q10",panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice92.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext9ActionPerformed
+
+    private void rbChoice101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice101ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice101ActionPerformed
+
+    private void rbChoice102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice102ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice102ActionPerformed
+
+    private void rbChoice103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice103ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice103ActionPerformed
+
+    private void rbChoice104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice104ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice104ActionPerformed
+
+    private void bnNext10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext10ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.add("Q11",panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice102.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext10ActionPerformed
+
+    private void rbChoice111ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice111ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice111ActionPerformed
+
+    private void rbChoice112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice112ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice112ActionPerformed
+
+    private void rbChoice113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice113ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice113ActionPerformed
+
+    private void rbChoice114ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice114ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice114ActionPerformed
+
+    private void bnNext11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext11ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.add("Q12",panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice113.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext11ActionPerformed
+
+    private void rbChoice121ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice121ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice121ActionPerformed
+
+    private void rbChoice122ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice122ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice122ActionPerformed
+
+    private void rbChoice123ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice123ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice123ActionPerformed
+
+    private void rbChoice124ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice124ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice124ActionPerformed
+
+    private void bnNext12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext12ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.add("Q13", panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice122.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext12ActionPerformed
+
+    private void rbChoice131ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice131ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice131ActionPerformed
+
+    private void rbChoice132ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice132ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice132ActionPerformed
+
+    private void rbChoice133ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice133ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice133ActionPerformed
+
+    private void rbChoice134ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice134ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice134ActionPerformed
+
+    private void bnNext13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext13ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.add("Q14", panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice132.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext13ActionPerformed
+
+    private void rbChoice141ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice141ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice141ActionPerformed
+
+    private void rbChoice142ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice142ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice142ActionPerformed
+
+    private void rbChoice143ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice143ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice143ActionPerformed
+
+    private void rbChoice144ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice144ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice144ActionPerformed
+
+    private void bnNext14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext14ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.add("Q15",panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice143.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext14ActionPerformed
+
+    private void rbChoice151ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice151ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice151ActionPerformed
+
+    private void rbChoice152ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice152ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice152ActionPerformed
+
+    private void rbChoice153ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice153ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice153ActionPerformed
+
+    private void rbChoice154ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice154ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice154ActionPerformed
+
+    private void bnNext15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext15ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.add("Q16", panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice152.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext15ActionPerformed
+
+    private void rbChoice161ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice161ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice161ActionPerformed
+
+    private void rbChoice162ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice162ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice162ActionPerformed
+
+    private void rbChoice163ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice163ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice163ActionPerformed
+
+    private void rbChoice164ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice164ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice164ActionPerformed
+
+    private void bnNext16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext16ActionPerformed
+       String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.add("Q17", panel17);
+        tbpane.remove(panelResult);
+
+        if(rbChoice164.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+    }//GEN-LAST:event_bnNext16ActionPerformed
+
+    private void rbChoice171ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice171ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice171ActionPerformed
+
+    private void rbChoice172ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice172ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice172ActionPerformed
+
+    private void rbChoice173ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice173ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice173ActionPerformed
+
+    private void rbChoice174ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbChoice174ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbChoice174ActionPerformed
+
+    private void bnNext17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnNext17ActionPerformed
+        String qans;
+        tbpane.remove(panel1);
+        tbpane.remove(panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.add("Result", panelResult);
+
+        if(rbChoice173.isSelected()){
+            score++;
+            qans = "Correct!";
+        }
+        else{
+            qans = "Wrong!";
+        }
+        MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
+        int currentValue = pb1.getValue();
+        pb1.setValue(currentValue + 1);
+        
+        lblScore.setText("You got a score of "+score+" out of 17!");
+
+        if (score <= 5){
+            lblRemarks.setText("Failed");
+        }
+        else if(score <= 10){
+            lblRemarks.setText("Fair");
+        }
+        else if(score <= 16){
+            lblRemarks.setText("Very Good");
+        }
+        else if(score == 17){
+            lblRemarks.setText("Excellent");
+        }
+        
+        String total = lblTimer.getText();
+        lblTimeDone.setText("Total Time: " +total);
+        
+        isIt = true;
+    }//GEN-LAST:event_bnNext17ActionPerformed
+
+    private void bnRetakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnRetakeActionPerformed
+        lblname.setText("");
+        tfname.setText("");
+        lblTimer.setText("00:00");
+        counter = 0;
+        score = 0;
+        
+        pb1.setValue(0);
+        int currentValue = pb1.getValue();
+        rbChoice11.setSelected(false);
+        rbChoice12.setSelected(false);
+        rbChoice13.setSelected(false);
+        rbChoice14.setSelected(false);
+        rbChoice21.setSelected(false);
+        rbChoice22.setSelected(false);
+        rbChoice23.setSelected(false);
+        rbChoice24.setSelected(false);
+        rbChoice31.setSelected(false);
+        rbChoice32.setSelected(false);
+        rbChoice33.setSelected(false);
+        rbChoice34.setSelected(false);
+        rbChoice41.setSelected(false);
+        rbChoice42.setSelected(false);
+        rbChoice43.setSelected(false);
+        rbChoice44.setSelected(false);
+        rbChoice51.setSelected(false);
+        rbChoice52.setSelected(false);
+        rbChoice53.setSelected(false);
+        rbChoice54.setSelected(false);
+        rbChoice61.setSelected(false);
+        rbChoice62.setSelected(false);
+        rbChoice63.setSelected(false);
+        rbChoice64.setSelected(false);
+        rbChoice71.setSelected(false);
+        rbChoice72.setSelected(false);
+        rbChoice73.setSelected(false);
+        rbChoice74.setSelected(false);
+        rbChoice81.setSelected(false);
+        rbChoice82.setSelected(false);
+        rbChoice83.setSelected(false);
+        rbChoice84.setSelected(false);
+        rbChoice91.setSelected(false);
+        rbChoice92.setSelected(false);
+        rbChoice93.setSelected(false);
+        rbChoice94.setSelected(false);
+        rbChoice101.setSelected(false);
+        rbChoice102.setSelected(false);
+        rbChoice103.setSelected(false);
+        rbChoice104.setSelected(false);
+        rbChoice111.setSelected(false);
+        rbChoice112.setSelected(false);
+        rbChoice113.setSelected(false);
+        rbChoice114.setSelected(false);
+        rbChoice121.setSelected(false);
+        rbChoice122.setSelected(false);
+        rbChoice123.setSelected(false);
+        rbChoice124.setSelected(false);
+        rbChoice131.setSelected(false);
+        rbChoice132.setSelected(false);
+        rbChoice133.setSelected(false);
+        rbChoice134.setSelected(false);
+        rbChoice141.setSelected(false);
+        rbChoice142.setSelected(false);
+        rbChoice143.setSelected(false);
+        rbChoice144.setSelected(false);
+        rbChoice151.setSelected(false);
+        rbChoice152.setSelected(false);
+        rbChoice153.setSelected(false);
+        rbChoice154.setSelected(false);
+        rbChoice161.setSelected(false);
+        rbChoice162.setSelected(false);
+        rbChoice163.setSelected(false);
+        rbChoice164.setSelected(false);
+        rbChoice171.setSelected(false);
+        rbChoice172.setSelected(false);
+        rbChoice173.setSelected(false);
+        rbChoice174.setSelected(false); 
+        
+        tbpane.remove(panel1);
+        tbpane.add("User", panelUser);
+        tbpane.remove(panel2);
+        tbpane.remove(panel3);
+        tbpane.remove(panel4);
+        tbpane.remove(panel5);
+        tbpane.remove(panel6);
+        tbpane.remove(panel7);
+        tbpane.remove(panel8);
+        tbpane.remove(panel9);
+        tbpane.remove(panel10);
+        tbpane.remove(panel11);
+        tbpane.remove(panel12);
+        tbpane.remove(panel13);
+        tbpane.remove(panel14);
+        tbpane.remove(panel15);
+        tbpane.remove(panel16);
+        tbpane.remove(panel17);
+        tbpane.remove(panelResult);
+
+    }//GEN-LAST:event_bnRetakeActionPerformed
+
+    private void lblTimerPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_lblTimerPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblTimerPropertyChange
+
+    private void bnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnExitActionPerformed
+     this.hide();
+     Form_MainMenu f1 = new Form_MainMenu();
+     f1.show();
+    }//GEN-LAST:event_bnExitActionPerformed
+
+    private void bnExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnExit1ActionPerformed
+    this.hide();
+     Form_MainMenu f1 = new Form_MainMenu();
+     f1.show();        // TODO add your handling code here:
+    }//GEN-LAST:event_bnExit1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        SwingUtilities.invokeLater(() -> new Form_Quiz());
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -103,6 +3374,7 @@ public class Form_Quiz extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Form_Quiz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -113,8 +3385,160 @@ public class Form_Quiz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bnExit;
+    private javax.swing.JButton bnExit1;
+    private javax.swing.JButton bnNext;
+    private javax.swing.JButton bnNext1;
+    private javax.swing.JButton bnNext10;
+    private javax.swing.JButton bnNext11;
+    private javax.swing.JButton bnNext12;
+    private javax.swing.JButton bnNext13;
+    private javax.swing.JButton bnNext14;
+    private javax.swing.JButton bnNext15;
+    private javax.swing.JButton bnNext16;
+    private javax.swing.JButton bnNext17;
+    private javax.swing.JButton bnNext2;
+    private javax.swing.JButton bnNext3;
+    private javax.swing.JButton bnNext4;
+    private javax.swing.JButton bnNext5;
+    private javax.swing.JButton bnNext6;
+    private javax.swing.JButton bnNext7;
+    private javax.swing.JButton bnNext8;
+    private javax.swing.JButton bnNext9;
+    private javax.swing.JButton bnRetake;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel labelName1;
+    private javax.swing.JLabel lblRemarks;
+    private javax.swing.JLabel lblScore;
+    private javax.swing.JLabel lblTimeDone;
+    private javax.swing.JLabel lblTimer;
+    private javax.swing.JLabel lblname;
+    private javax.swing.JPanel panel1;
+    private javax.swing.JPanel panel10;
+    private javax.swing.JPanel panel11;
+    private javax.swing.JPanel panel12;
+    private javax.swing.JPanel panel13;
+    private javax.swing.JPanel panel14;
+    private javax.swing.JPanel panel15;
+    private javax.swing.JPanel panel16;
+    private javax.swing.JPanel panel17;
+    private javax.swing.JPanel panel2;
+    private javax.swing.JPanel panel3;
+    private javax.swing.JPanel panel4;
+    private javax.swing.JPanel panel5;
+    private javax.swing.JPanel panel6;
+    private javax.swing.JPanel panel7;
+    private javax.swing.JPanel panel8;
+    private javax.swing.JPanel panel9;
+    private javax.swing.JPanel panelResult;
+    private javax.swing.JPanel panelUser;
+    private javax.swing.JProgressBar pb1;
+    private javax.swing.JRadioButton rbChoice101;
+    private javax.swing.JRadioButton rbChoice102;
+    private javax.swing.JRadioButton rbChoice103;
+    private javax.swing.JRadioButton rbChoice104;
+    private javax.swing.JRadioButton rbChoice11;
+    private javax.swing.JRadioButton rbChoice111;
+    private javax.swing.JRadioButton rbChoice112;
+    private javax.swing.JRadioButton rbChoice113;
+    private javax.swing.JRadioButton rbChoice114;
+    private javax.swing.JRadioButton rbChoice12;
+    private javax.swing.JRadioButton rbChoice121;
+    private javax.swing.JRadioButton rbChoice122;
+    private javax.swing.JRadioButton rbChoice123;
+    private javax.swing.JRadioButton rbChoice124;
+    private javax.swing.JRadioButton rbChoice13;
+    private javax.swing.JRadioButton rbChoice131;
+    private javax.swing.JRadioButton rbChoice132;
+    private javax.swing.JRadioButton rbChoice133;
+    private javax.swing.JRadioButton rbChoice134;
+    private javax.swing.JRadioButton rbChoice14;
+    private javax.swing.JRadioButton rbChoice141;
+    private javax.swing.JRadioButton rbChoice142;
+    private javax.swing.JRadioButton rbChoice143;
+    private javax.swing.JRadioButton rbChoice144;
+    private javax.swing.JRadioButton rbChoice151;
+    private javax.swing.JRadioButton rbChoice152;
+    private javax.swing.JRadioButton rbChoice153;
+    private javax.swing.JRadioButton rbChoice154;
+    private javax.swing.JRadioButton rbChoice161;
+    private javax.swing.JRadioButton rbChoice162;
+    private javax.swing.JRadioButton rbChoice163;
+    private javax.swing.JRadioButton rbChoice164;
+    private javax.swing.JRadioButton rbChoice171;
+    private javax.swing.JRadioButton rbChoice172;
+    private javax.swing.JRadioButton rbChoice173;
+    private javax.swing.JRadioButton rbChoice174;
+    private javax.swing.JRadioButton rbChoice21;
+    private javax.swing.JRadioButton rbChoice22;
+    private javax.swing.JRadioButton rbChoice23;
+    private javax.swing.JRadioButton rbChoice24;
+    private javax.swing.JRadioButton rbChoice31;
+    private javax.swing.JRadioButton rbChoice32;
+    private javax.swing.JRadioButton rbChoice33;
+    private javax.swing.JRadioButton rbChoice34;
+    private javax.swing.JRadioButton rbChoice41;
+    private javax.swing.JRadioButton rbChoice42;
+    private javax.swing.JRadioButton rbChoice43;
+    private javax.swing.JRadioButton rbChoice44;
+    private javax.swing.JRadioButton rbChoice51;
+    private javax.swing.JRadioButton rbChoice52;
+    private javax.swing.JRadioButton rbChoice53;
+    private javax.swing.JRadioButton rbChoice54;
+    private javax.swing.JRadioButton rbChoice61;
+    private javax.swing.JRadioButton rbChoice62;
+    private javax.swing.JRadioButton rbChoice63;
+    private javax.swing.JRadioButton rbChoice64;
+    private javax.swing.JRadioButton rbChoice71;
+    private javax.swing.JRadioButton rbChoice72;
+    private javax.swing.JRadioButton rbChoice73;
+    private javax.swing.JRadioButton rbChoice74;
+    private javax.swing.JRadioButton rbChoice81;
+    private javax.swing.JRadioButton rbChoice82;
+    private javax.swing.JRadioButton rbChoice83;
+    private javax.swing.JRadioButton rbChoice84;
+    private javax.swing.JRadioButton rbChoice91;
+    private javax.swing.JRadioButton rbChoice92;
+    private javax.swing.JRadioButton rbChoice93;
+    private javax.swing.JRadioButton rbChoice94;
+    private javax.swing.JTabbedPane tbpane;
+    private javax.swing.JTextField tfname;
     // End of variables declaration//GEN-END:variables
 }
