@@ -4,6 +4,11 @@
  */
 package com.mcavldzgroup.finalproj_mca;
 
+/**
+ *
+ * @author VALDEZ
+ */
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;

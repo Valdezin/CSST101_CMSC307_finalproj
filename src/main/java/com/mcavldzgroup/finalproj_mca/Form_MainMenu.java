@@ -17,6 +17,10 @@ import javax.swing.Timer;
  */
 public class Form_MainMenu extends javax.swing.JFrame {
 
+    Form_MainMenu() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     /**
      * Creates new form Form_MainMenu
      */
