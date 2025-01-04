@@ -32,6 +32,8 @@ public class Form_Quiz extends javax.swing.JFrame {
      */
     public Form_Quiz() {
         initComponents();
+        setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizes the frame
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pb1.setMinimum(0);
         pb1.setMaximum(18);
         ManageButtonGroup();
@@ -308,6 +310,8 @@ public class Form_Quiz extends javax.swing.JFrame {
         pb1 = new javax.swing.JProgressBar();
         labelName1 = new javax.swing.JLabel();
         lblTimer = new javax.swing.JLabel();
+
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
