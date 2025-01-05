@@ -159,6 +159,10 @@ public class Form_Quiz extends javax.swing.JFrame {
         tfname = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         bnNext = new javax.swing.JButton();
+<<<<<<< HEAD
+=======
+        bnExit = new javax.swing.JButton();
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         panel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -300,14 +304,23 @@ public class Form_Quiz extends javax.swing.JFrame {
         lblScore = new javax.swing.JLabel();
         lblRemarks = new javax.swing.JLabel();
         bnRetake = new javax.swing.JButton();
+<<<<<<< HEAD
         lblTimeDone = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tpSummary = new javax.swing.JTextArea();
         lblSummaryTitle1 = new javax.swing.JLabel();
+=======
+        bnExit1 = new javax.swing.JButton();
+        lblTimeDone = new javax.swing.JLabel();
+        lblSummaryTitle = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tpSummary = new javax.swing.JTextArea();
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         lblname = new javax.swing.JLabel();
         pb1 = new javax.swing.JProgressBar();
         labelName1 = new javax.swing.JLabel();
         lblTimer = new javax.swing.JLabel();
+<<<<<<< HEAD
         bnExit = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -322,6 +335,8 @@ public class Form_Quiz extends javax.swing.JFrame {
         lblSummaryTitle7 = new javax.swing.JLabel();
         lblSummaryTitle8 = new javax.swing.JLabel();
         lblSummaryTitle9 = new javax.swing.JLabel();
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
 
         setUndecorated(true);
 
@@ -332,7 +347,11 @@ public class Form_Quiz extends javax.swing.JFrame {
 
         panelUser.setBackground(new java.awt.Color(102, 153, 0));
 
+<<<<<<< HEAD
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+=======
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Welcome to our Quiz Page!");
 
@@ -350,10 +369,22 @@ public class Form_Quiz extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+=======
+        bnExit.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnExit.setText("Exit");
+        bnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnExitActionPerformed(evt);
+            }
+        });
+
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         javax.swing.GroupLayout panelUserLayout = new javax.swing.GroupLayout(panelUser);
         panelUser.setLayout(panelUserLayout);
         panelUserLayout.setHorizontalGroup(
             panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUserLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -372,10 +403,26 @@ public class Form_Quiz extends javax.swing.JFrame {
                         .addGap(172, 172, 172)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 181, Short.MAX_VALUE))
+=======
+            .addGroup(panelUserLayout.createSequentialGroup()
+                .addContainerGap(214, Short.MAX_VALUE)
+                .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfname, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(184, 184, 184))
+            .addGroup(panelUserLayout.createSequentialGroup()
+                .addGap(305, 305, 305)
+                .addComponent(bnNext)
+                .addGap(52, 52, 52)
+                .addComponent(bnExit)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panelUserLayout.setVerticalGroup(
             panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelUserLayout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(80, 80, 80)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
@@ -385,6 +432,19 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
                 .addComponent(bnNext)
                 .addGap(17, 17, 17))
+=======
+                .addGap(40, 40, 40)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfname, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bnNext)
+                    .addComponent(bnExit))
+                .addGap(41, 41, 41))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
 
         tbpane.addTab("USER", panelUser);
@@ -467,7 +527,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                                 .addComponent(rbChoice11)
                                 .addComponent(rbChoice13, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(rbChoice14, javax.swing.GroupLayout.Alignment.LEADING)))))
+<<<<<<< HEAD
                 .addContainerGap(312, Short.MAX_VALUE))
+=======
+                .addContainerGap(184, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext1)
@@ -488,7 +552,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice14)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext1)
                 .addGap(27, 27, 27))
         );
@@ -572,7 +640,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice23)
                             .addComponent(rbChoice24)
                             .addComponent(rbChoice21))))
+<<<<<<< HEAD
                 .addContainerGap(450, Short.MAX_VALUE))
+=======
+                .addContainerGap(322, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext2)
@@ -593,7 +665,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice23)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice24)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext2)
                 .addGap(27, 27, 27))
         );
@@ -662,10 +738,13 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel3.setLayout(panel3Layout);
         panel3Layout.setHorizontalGroup(
             panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
                 .addGap(0, 750, Short.MAX_VALUE)
                 .addComponent(bnNext3)
                 .addGap(95, 95, 95))
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(panel3Layout.createSequentialGroup()
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel3Layout.createSequentialGroup()
@@ -677,11 +756,25 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice32)
                             .addComponent(rbChoice33)
                             .addComponent(rbChoice34)
+<<<<<<< HEAD
                             .addComponent(rbChoice31)))
                     .addGroup(panel3Layout.createSequentialGroup()
                         .addGap(126, 126, 126)
                         .addComponent(jLabel8)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(rbChoice31))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
+                        .addComponent(bnNext3)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(74, 74, 74))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel3Layout.setVerticalGroup(
             panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,7 +791,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice33)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice34)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext3)
                 .addGap(27, 27, 27))
         );
@@ -767,10 +864,13 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel4.setLayout(panel4Layout);
         panel4Layout.setHorizontalGroup(
             panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel4Layout.createSequentialGroup()
                 .addGap(0, 750, Short.MAX_VALUE)
                 .addComponent(bnNext4)
                 .addGap(95, 95, 95))
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(panel4Layout.createSequentialGroup()
                 .addGroup(panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel4Layout.createSequentialGroup()
@@ -782,20 +882,37 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice42)
                             .addComponent(rbChoice43)
                             .addComponent(rbChoice44)
+<<<<<<< HEAD
                             .addComponent(rbChoice41)))
                     .addGroup(panel4Layout.createSequentialGroup()
                         .addGap(117, 117, 117)
                         .addComponent(jLabel10)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(rbChoice41))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10)
+                    .addComponent(bnNext4))
+                .addGap(95, 95, 95))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel4Layout.setVerticalGroup(
             panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel4Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
                 .addGap(24, 24, 24)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel10)
+                .addGap(18, 18, 18)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(rbChoice41)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice42)
@@ -803,7 +920,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice43)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice44)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext4)
                 .addGap(27, 27, 27))
         );
@@ -886,11 +1007,22 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice51))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(0, 129, Short.MAX_VALUE)
                 .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel12)
                     .addComponent(bnNext5))
                 .addGap(95, 95, 95))
+=======
+                .addGap(0, 57, Short.MAX_VALUE)
+                .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
+                        .addComponent(bnNext5)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addGap(39, 39, 39))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel5Layout.setVerticalGroup(
             panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -907,7 +1039,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice53)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice54)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext5)
                 .addGap(27, 27, 27))
         );
@@ -991,7 +1127,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice63)
                             .addComponent(rbChoice64)
                             .addComponent(rbChoice61))))
+<<<<<<< HEAD
                 .addContainerGap(423, Short.MAX_VALUE))
+=======
+                .addContainerGap(295, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel6Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext6)
@@ -1012,7 +1152,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice63)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice64)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext6)
                 .addGap(27, 27, 27))
         );
@@ -1096,7 +1240,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice73)
                             .addComponent(rbChoice74)
                             .addComponent(rbChoice71))))
+<<<<<<< HEAD
                 .addContainerGap(468, Short.MAX_VALUE))
+=======
+                .addContainerGap(340, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel7Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext7)
@@ -1117,7 +1265,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice73)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice74)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext7)
                 .addGap(27, 27, 27))
         );
@@ -1201,7 +1353,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice83)
                             .addComponent(rbChoice84)
                             .addComponent(rbChoice81))))
+<<<<<<< HEAD
                 .addContainerGap(444, Short.MAX_VALUE))
+=======
+                .addContainerGap(316, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel8Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext8)
@@ -1222,7 +1378,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice83)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice84)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext8)
                 .addGap(27, 27, 27))
         );
@@ -1291,10 +1451,13 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel9.setLayout(panel9Layout);
         panel9Layout.setHorizontalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
                 .addGap(0, 750, Short.MAX_VALUE)
                 .addComponent(bnNext9)
                 .addGap(95, 95, 95))
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(panel9Layout.createSequentialGroup()
                 .addGroup(panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel9Layout.createSequentialGroup()
@@ -1306,11 +1469,25 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice92)
                             .addComponent(rbChoice93)
                             .addComponent(rbChoice94)
+<<<<<<< HEAD
                             .addComponent(rbChoice91)))
                     .addGroup(panel9Layout.createSequentialGroup()
                         .addGap(134, 134, 134)
                         .addComponent(jLabel20)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(rbChoice91))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
+                        .addComponent(bnNext9)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addGap(133, 133, 133))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel9Layout.setVerticalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1327,7 +1504,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice93)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice94)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext9)
                 .addGap(27, 27, 27))
         );
@@ -1411,7 +1592,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice103)
                             .addComponent(rbChoice104)
                             .addComponent(rbChoice101))))
+<<<<<<< HEAD
                 .addContainerGap(338, Short.MAX_VALUE))
+=======
+                .addContainerGap(210, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel10Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext10)
@@ -1432,7 +1617,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice103)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice104)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext10)
                 .addGap(27, 27, 27))
         );
@@ -1501,10 +1690,13 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel11.setLayout(panel11Layout);
         panel11Layout.setHorizontalGroup(
             panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
                 .addGap(0, 750, Short.MAX_VALUE)
                 .addComponent(bnNext11)
                 .addGap(95, 95, 95))
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(panel11Layout.createSequentialGroup()
                 .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel11Layout.createSequentialGroup()
@@ -1516,11 +1708,25 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice112)
                             .addComponent(rbChoice113)
                             .addComponent(rbChoice114)
+<<<<<<< HEAD
                             .addComponent(rbChoice111)))
                     .addGroup(panel11Layout.createSequentialGroup()
                         .addGap(160, 160, 160)
                         .addComponent(jLabel24)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(rbChoice111))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                .addGap(0, 169, Short.MAX_VALUE)
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                        .addComponent(bnNext11)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                        .addComponent(jLabel24)
+                        .addGap(166, 166, 166))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel11Layout.setVerticalGroup(
             panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1537,7 +1743,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice113)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice114)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext11)
                 .addGap(27, 27, 27))
         );
@@ -1623,9 +1833,15 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice124)
                             .addComponent(rbChoice121)))
                     .addGroup(panel12Layout.createSequentialGroup()
+<<<<<<< HEAD
                         .addGap(158, 158, 158)
                         .addComponent(jLabel26)))
                 .addContainerGap(492, Short.MAX_VALUE))
+=======
+                        .addGap(230, 230, 230)
+                        .addComponent(jLabel26)))
+                .addContainerGap(292, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel12Layout.setVerticalGroup(
             panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1642,7 +1858,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice123)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice124)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext12)
                 .addGap(27, 27, 27))
         );
@@ -1711,10 +1931,13 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel13.setLayout(panel13Layout);
         panel13Layout.setHorizontalGroup(
             panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
                 .addGap(0, 750, Short.MAX_VALUE)
                 .addComponent(bnNext13)
                 .addGap(95, 95, 95))
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(panel13Layout.createSequentialGroup()
                 .addGroup(panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel13Layout.createSequentialGroup()
@@ -1726,11 +1949,25 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice132)
                             .addComponent(rbChoice133)
                             .addComponent(rbChoice134)
+<<<<<<< HEAD
                             .addComponent(rbChoice131)))
                     .addGroup(panel13Layout.createSequentialGroup()
                         .addGap(116, 116, 116)
                         .addComponent(jLabel28)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(rbChoice131))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
+                        .addComponent(bnNext13)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
+                        .addComponent(jLabel28)
+                        .addGap(79, 79, 79))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel13Layout.setVerticalGroup(
             panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1747,7 +1984,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice133)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice134)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext13)
                 .addGap(27, 27, 27))
         );
@@ -1816,10 +2057,13 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel14.setLayout(panel14Layout);
         panel14Layout.setHorizontalGroup(
             panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
                 .addGap(0, 750, Short.MAX_VALUE)
                 .addComponent(bnNext14)
                 .addGap(95, 95, 95))
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(panel14Layout.createSequentialGroup()
                 .addGroup(panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel14Layout.createSequentialGroup()
@@ -1831,11 +2075,25 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice142)
                             .addComponent(rbChoice143)
                             .addComponent(rbChoice144)
+<<<<<<< HEAD
                             .addComponent(rbChoice141)))
                     .addGroup(panel14Layout.createSequentialGroup()
                         .addGap(146, 146, 146)
                         .addComponent(jLabel30)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(rbChoice141))))
+                .addContainerGap(386, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
+                        .addComponent(bnNext14)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
+                        .addComponent(jLabel30)
+                        .addGap(140, 140, 140))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel14Layout.setVerticalGroup(
             panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1852,7 +2110,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice143)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice144)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext14)
                 .addGap(27, 27, 27))
         );
@@ -1936,7 +2198,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice153)
                             .addComponent(rbChoice154)
                             .addComponent(rbChoice151))))
+<<<<<<< HEAD
                 .addContainerGap(459, Short.MAX_VALUE))
+=======
+                .addContainerGap(331, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel15Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext15)
@@ -1957,7 +2223,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice153)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice154)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext15)
                 .addGap(27, 27, 27))
         );
@@ -2042,7 +2312,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                                 .addGap(6, 6, 6)
                                 .addComponent(jLabel34))
                             .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))))
+<<<<<<< HEAD
                 .addContainerGap(176, Short.MAX_VALUE))
+=======
+                .addContainerGap(48, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel16Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext16)
@@ -2063,7 +2337,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice163)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice164)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext16)
                 .addGap(27, 27, 27))
         );
@@ -2132,10 +2410,13 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel17.setLayout(panel17Layout);
         panel17Layout.setHorizontalGroup(
             panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
                 .addGap(0, 750, Short.MAX_VALUE)
                 .addComponent(bnNext17)
                 .addGap(95, 95, 95))
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             .addGroup(panel17Layout.createSequentialGroup()
                 .addGroup(panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel17Layout.createSequentialGroup()
@@ -2147,11 +2428,25 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice172)
                             .addComponent(rbChoice173)
                             .addComponent(rbChoice174)
+<<<<<<< HEAD
                             .addComponent(rbChoice171)))
                     .addGroup(panel17Layout.createSequentialGroup()
                         .addGap(136, 136, 136)
                         .addComponent(jLabel36)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(rbChoice171))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
+                .addGap(0, 125, Short.MAX_VALUE)
+                .addGroup(panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
+                        .addComponent(bnNext17)
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
+                        .addComponent(jLabel36)
+                        .addGap(86, 86, 86))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panel17Layout.setVerticalGroup(
             panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2168,7 +2463,11 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice173)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice174)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 .addComponent(bnNext17)
                 .addGap(27, 27, 27))
         );
@@ -2198,25 +2497,48 @@ public class Form_Quiz extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+=======
+        bnExit1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        bnExit1.setText("Exit");
+        bnExit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bnExit1ActionPerformed(evt);
+            }
+        });
+
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         lblTimeDone.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         lblTimeDone.setForeground(new java.awt.Color(255, 255, 255));
         lblTimeDone.setText("Total Time: 00:00");
 
+<<<<<<< HEAD
+=======
+        lblSummaryTitle.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblSummaryTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblSummaryTitle.setText("Summary:");
+        lblSummaryTitle.setToolTipText("");
+
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         tpSummary.setEditable(false);
         tpSummary.setColumns(20);
         tpSummary.setRows(5);
         jScrollPane2.setViewportView(tpSummary);
 
+<<<<<<< HEAD
         lblSummaryTitle1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         lblSummaryTitle1.setForeground(new java.awt.Color(255, 255, 255));
         lblSummaryTitle1.setText("Summary:");
         lblSummaryTitle1.setToolTipText("");
 
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         javax.swing.GroupLayout panelResultLayout = new javax.swing.GroupLayout(panelResult);
         panelResult.setLayout(panelResultLayout);
         panelResultLayout.setHorizontalGroup(
             panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelResultLayout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(21, 21, 21)
                 .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelResultLayout.createSequentialGroup()
@@ -2236,13 +2558,42 @@ public class Form_Quiz extends javax.swing.JFrame {
                     .addContainerGap(532, Short.MAX_VALUE)
                     .addComponent(lblSummaryTitle1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(217, 217, 217)))
+=======
+                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelResultLayout.createSequentialGroup()
+                        .addGap(214, 214, 214)
+                        .addComponent(bnRetake)
+                        .addGap(178, 178, 178)
+                        .addComponent(bnExit1))
+                    .addGroup(panelResultLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelResultLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblScore)
+                                    .addComponent(lblTimeDone)
+                                    .addComponent(lblRemarks, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel37))
+                        .addGap(26, 26, 26)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblSummaryTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(77, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         panelResultLayout.setVerticalGroup(
             panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelResultLayout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(16, 16, 16)
                 .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelResultLayout.createSequentialGroup()
+=======
+                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelResultLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                         .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
                         .addComponent(lblTimeDone)
@@ -2250,6 +2601,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                         .addComponent(lblScore)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblRemarks)
+<<<<<<< HEAD
                         .addGap(27, 334, Short.MAX_VALUE))
                     .addGroup(panelResultLayout.createSequentialGroup()
                         .addGap(41, 41, 41)
@@ -2262,10 +2614,24 @@ public class Form_Quiz extends javax.swing.JFrame {
                     .addGap(26, 26, 26)
                     .addComponent(lblSummaryTitle1)
                     .addContainerGap(445, Short.MAX_VALUE)))
+=======
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResultLayout.createSequentialGroup()
+                        .addContainerGap(17, Short.MAX_VALUE)
+                        .addComponent(lblSummaryTitle)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)))
+                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bnRetake)
+                    .addComponent(bnExit1))
+                .addGap(27, 27, 27))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
 
         tbpane.addTab("Result", panelResult);
 
+<<<<<<< HEAD
         lblname.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
 
         pb1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -2273,6 +2639,14 @@ public class Form_Quiz extends javax.swing.JFrame {
         pb1.setStringPainted(true);
 
         labelName1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+=======
+        lblname.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+
+        pb1.setMaximum(18);
+        pb1.setStringPainted(true);
+
+        labelName1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         labelName1.setText("Name:");
 
         lblTimer.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
@@ -2283,6 +2657,7 @@ public class Form_Quiz extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
         bnExit.setBackground(new java.awt.Color(255, 51, 51));
         bnExit.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         bnExit.setText("Exit");
@@ -2422,10 +2797,13 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addGap(51, 51, 51))
         );
 
+=======
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2452,10 +2830,30 @@ public class Form_Quiz extends javax.swing.JFrame {
                                 .addGap(0, 177, Short.MAX_VALUE)))))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 789, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(64, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pb1, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(labelName1)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblname, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblTimer, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(95, 95, 95))))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2483,12 +2881,29 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(pb1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(12, 12, 12)))
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                .addGap(50, 50, 50)
+                .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblname, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelName1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pb1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(lblTimer, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(12, Short.MAX_VALUE))
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
@@ -2498,6 +2913,13 @@ public class Form_Quiz extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
+=======
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         );
 
         pack();
@@ -3540,6 +3962,13 @@ public class Form_Quiz extends javax.swing.JFrame {
      this.hide();
     }//GEN-LAST:event_bnExitActionPerformed
 
+<<<<<<< HEAD
+=======
+    private void bnExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnExit1ActionPerformed
+    this.hide();
+    }//GEN-LAST:event_bnExit1ActionPerformed
+
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
     /**
      * @param args the command line arguments
      */
@@ -3585,6 +4014,10 @@ public class Form_Quiz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bnExit;
+<<<<<<< HEAD
+=======
+    private javax.swing.JButton bnExit1;
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
     private javax.swing.JButton bnNext;
     private javax.swing.JButton bnNext1;
     private javax.swing.JButton bnNext10;
@@ -3642,6 +4075,7 @@ public class Form_Quiz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -3660,6 +4094,13 @@ public class Form_Quiz extends javax.swing.JFrame {
     private javax.swing.JLabel lblSummaryTitle7;
     private javax.swing.JLabel lblSummaryTitle8;
     private javax.swing.JLabel lblSummaryTitle9;
+=======
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel labelName1;
+    private javax.swing.JLabel lblRemarks;
+    private javax.swing.JLabel lblScore;
+    private javax.swing.JLabel lblSummaryTitle;
+>>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
     private javax.swing.JLabel lblTimeDone;
     private javax.swing.JLabel lblTimer;
     private javax.swing.JLabel lblname;

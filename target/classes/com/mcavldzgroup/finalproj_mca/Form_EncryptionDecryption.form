@@ -11,9 +11,6 @@
       </Properties>
     </Component>
   </NonVisualComponents>
-  <Properties>
-    <Property name="undecorated" type="boolean" value="true"/>
-  </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
@@ -38,14 +35,10 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
-=======
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
           </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
       </Group>
     </DimensionLayout>
   </Layout>
@@ -53,11 +46,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-<<<<<<< HEAD
-          <Color blue="0" green="99" red="66" type="rgb"/>
-=======
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
         </Property>
       </Properties>
 
@@ -74,11 +63,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-                              <Group type="102" alignment="0" attributes="0">
-=======
                               <Group type="102" attributes="0">
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="shiftValuetxt" alignment="0" pref="363" max="32767" attributes="0"/>
@@ -91,56 +76,30 @@
                                           <Component id="encrypt" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
-<<<<<<< HEAD
-                                  <EmptySpace max="32767" attributes="0"/>
-=======
                                   <EmptySpace pref="61" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jScrollPane1" min="-2" pref="560" max="-2" attributes="0"/>
                                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                                   </Group>
-<<<<<<< HEAD
-                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-=======
                                   <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="shiftValueDecrypt" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtdecrypted" alignment="0" min="-2" pref="371" max="-2" attributes="0"/>
-<<<<<<< HEAD
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="btnDecrypt" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                                              <Component id="btnExit" min="-2" pref="115" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Component id="btnClear" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="91" max="32767" attributes="0"/>
-=======
+                                          <Component id="shiftValuetxt1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="encryptedMessage1" alignment="0" min="-2" pref="371" max="-2" attributes="0"/>
                                           <Component id="btnDecrypt" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="btnClear" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jScrollPane2" min="-2" pref="560" max="-2" attributes="0"/>
                                       <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                                   </Group>
-<<<<<<< HEAD
-                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-=======
                                   <EmptySpace pref="77" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                               </Group>
                           </Group>
                       </Group>
@@ -173,52 +132,27 @@
                       </Group>
                       <Component id="jScrollPane1" min="-2" pref="272" max="-2" attributes="0"/>
                   </Group>
-<<<<<<< HEAD
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-=======
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="txtdecrypted" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="encryptedMessage1" min="-2" pref="35" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="shiftValueDecrypt" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="shiftValuetxt1" min="-2" pref="35" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-<<<<<<< HEAD
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btnDecrypt" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnExit" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-=======
                           <Component id="btnDecrypt" min="-2" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="btnClear" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jScrollPane2" alignment="0" min="-2" pref="272" max="-2" attributes="0"/>
                   </Group>
-<<<<<<< HEAD
-                  <EmptySpace pref="80" max="32767" attributes="0"/>
-=======
                   <EmptySpace pref="75" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
               </Group>
           </Group>
         </DimensionLayout>
@@ -335,14 +269,14 @@
             <Property name="text" type="java.lang.String" value="Enter the shift value:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtdecrypted">
+        <Component class="javax.swing.JTextField" name="encryptedMessage1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="24" style="0"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="shiftValueDecrypt">
+        <Component class="javax.swing.JTextField" name="shiftValuetxt1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="24" style="0"/>
@@ -404,23 +338,6 @@
             </Component>
           </SubComponents>
         </Container>
-<<<<<<< HEAD
-        <Component class="javax.swing.JButton" name="btnExit">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Exit"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExitActionPerformed"/>
-          </Events>
-        </Component>
-=======
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
       </SubComponents>
     </Container>
   </SubComponents>
