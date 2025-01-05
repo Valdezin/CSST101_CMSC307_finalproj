@@ -23,26 +23,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
           </Group>
-=======
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
           </Group>
-=======
-          <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
       </Group>
     </DimensionLayout>
   </Layout>
@@ -57,7 +49,6 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
               <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -92,37 +83,12 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-=======
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="tbpane" min="-2" pref="789" max="-2" attributes="0"/>
-                          <EmptySpace pref="64" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="pb1" min="-2" pref="508" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="labelName1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="lblname" min="-2" pref="240" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="lblTimer" min="-2" pref="86" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jPanel3" max="32767" attributes="0"/>
@@ -158,26 +124,6 @@
                       </Group>
                   </Group>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-=======
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="tbpane" min="-2" pref="357" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblname" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                              <Component id="labelName1" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="pb1" min="-2" pref="24" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="lblTimer" min="-2" pref="36" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace pref="12" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
               </Group>
           </Group>
         </DimensionLayout>
@@ -212,7 +158,6 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -238,30 +183,12 @@
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="181" max="32767" attributes="0"/>
-=======
-                      <Group type="102" attributes="0">
-                          <EmptySpace pref="214" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel2" min="-2" pref="374" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" pref="374" max="-2" attributes="0"/>
-                              <Component id="tfname" min="-2" pref="391" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="184" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="305" max="-2" attributes="0"/>
-                          <Component id="bnNext" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                          <Component id="bnExit" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
                           <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="36" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
@@ -271,20 +198,6 @@
                           <EmptySpace pref="183" max="32767" attributes="0"/>
                           <Component id="bnNext" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-=======
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="36" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jLabel2" min="-2" pref="36" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="tfname" min="-2" pref="39" max="-2" attributes="0"/>
-                          <EmptySpace pref="45" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="bnNext" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="bnExit" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -293,11 +206,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< HEAD
                       <Font name="Verdana" size="36" style="1"/>
-=======
-                      <Font name="Verdana" size="24" style="1"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -334,20 +243,6 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bnNextActionPerformed"/>
                   </Events>
                 </Component>
-<<<<<<< HEAD
-=======
-                <Component class="javax.swing.JButton" name="bnExit">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Verdana" size="12" style="1"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Exit"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bnExitActionPerformed"/>
-                  </Events>
-                </Component>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panel1">
@@ -389,11 +284,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="312" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="184" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -417,11 +308,7 @@
                           <Component id="rbChoice13" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice14" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -569,11 +456,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="450" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="322" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -597,11 +480,7 @@
                           <Component id="rbChoice23" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice24" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -729,16 +608,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
                           <Component id="bnNext3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-=======
-                      <Group type="102" alignment="0" attributes="0">
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -753,30 +628,12 @@
                                       <Component id="rbChoice31" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-<<<<<<< HEAD
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
                                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-=======
-                          </Group>
-                          <EmptySpace pref="386" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="bnNext3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -795,11 +652,7 @@
                           <Component id="rbChoice33" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice34" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -927,16 +780,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
                           <Component id="bnNext4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-=======
-                      <Group type="102" alignment="0" attributes="0">
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -951,25 +800,12 @@
                                       <Component id="rbChoice41" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-<<<<<<< HEAD
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
                                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-=======
-                          </Group>
-                          <EmptySpace pref="386" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                              <Component id="bnNext4" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -978,15 +814,9 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                           <Component id="jLabel9" min="-2" pref="36" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-=======
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="rbChoice41" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice42" min="-2" max="-2" attributes="0"/>
@@ -994,11 +824,7 @@
                           <Component id="rbChoice43" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice44" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -1145,26 +971,12 @@
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-<<<<<<< HEAD
                           <EmptySpace min="0" pref="129" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                               <Component id="bnNext5" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-=======
-                          <EmptySpace min="0" pref="57" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="bnNext5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1183,11 +995,7 @@
                           <Component id="rbChoice53" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice54" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -1335,11 +1143,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="423" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="295" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -1363,11 +1167,7 @@
                           <Component id="rbChoice63" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice64" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -1515,11 +1315,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="468" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="340" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -1543,11 +1339,7 @@
                           <Component id="rbChoice73" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice74" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -1695,11 +1487,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="444" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="316" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -1723,11 +1511,7 @@
                           <Component id="rbChoice83" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice84" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext8" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -1855,16 +1639,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
                           <Component id="bnNext9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-=======
-                      <Group type="102" alignment="0" attributes="0">
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -1879,30 +1659,12 @@
                                       <Component id="rbChoice91" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-<<<<<<< HEAD
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
                                   <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-=======
-                          </Group>
-                          <EmptySpace pref="386" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="bnNext9" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1921,11 +1683,7 @@
                           <Component id="rbChoice93" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice94" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -2073,11 +1831,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="338" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="210" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -2101,11 +1855,7 @@
                           <Component id="rbChoice103" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice104" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext10" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -2233,14 +1983,11 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
                           <Component id="bnNext11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
-=======
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
@@ -2256,7 +2003,6 @@
                                       <Component id="rbChoice111" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-<<<<<<< HEAD
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
                                   <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
@@ -2264,24 +2010,6 @@
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
-=======
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="169" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="bnNext11" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -2299,11 +2027,7 @@
                           <Component id="rbChoice113" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice114" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -2452,19 +2176,11 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
                                   <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
                                   <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="492" max="32767" attributes="0"/>
-=======
-                                  <EmptySpace min="-2" pref="230" max="-2" attributes="0"/>
-                                  <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace pref="292" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2483,11 +2199,7 @@
                           <Component id="rbChoice123" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice124" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext12" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -2615,16 +2327,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
                           <Component id="bnNext13" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-=======
-                      <Group type="102" alignment="0" attributes="0">
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -2639,30 +2347,12 @@
                                       <Component id="rbChoice131" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-<<<<<<< HEAD
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
                                   <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-=======
-                          </Group>
-                          <EmptySpace pref="386" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="bnNext13" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2681,11 +2371,7 @@
                           <Component id="rbChoice133" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice134" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext13" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -2813,16 +2499,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
                           <Component id="bnNext14" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-=======
-                      <Group type="102" alignment="0" attributes="0">
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -2837,30 +2519,12 @@
                                       <Component id="rbChoice141" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-<<<<<<< HEAD
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="146" max="-2" attributes="0"/>
                                   <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-=======
-                          </Group>
-                          <EmptySpace pref="386" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="bnNext14" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2879,11 +2543,7 @@
                           <Component id="rbChoice143" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice144" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext14" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -3031,11 +2691,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="459" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="331" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -3059,11 +2715,7 @@
                           <Component id="rbChoice153" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice154" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext15" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -3213,11 +2865,7 @@
                                   </Group>
                               </Group>
                           </Group>
-<<<<<<< HEAD
                           <EmptySpace pref="176" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="48" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -3241,11 +2889,7 @@
                           <Component id="rbChoice163" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice164" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext16" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -3373,14 +3017,11 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
                           <Component id="bnNext17" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                       </Group>
-=======
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
@@ -3396,7 +3037,6 @@
                                       <Component id="rbChoice171" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-<<<<<<< HEAD
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
                                   <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
@@ -3404,24 +3044,6 @@
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
-=======
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="125" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="bnNext17" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -3439,11 +3061,7 @@
                           <Component id="rbChoice173" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rbChoice174" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <EmptySpace pref="232" max="32767" attributes="0"/>
-=======
-                          <EmptySpace pref="30" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                           <Component id="bnNext17" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
@@ -3571,7 +3189,6 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -3598,52 +3215,15 @@
                               <Component id="lblSummaryTitle1" min="-2" pref="168" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="217" max="-2" attributes="0"/>
                           </Group>
-=======
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="214" max="-2" attributes="0"/>
-                                  <Component id="bnRetake" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="178" max="-2" attributes="0"/>
-                                  <Component id="bnExit1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="lblScore" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblTimeDone" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblRemarks" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Component id="jLabel37" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane2" min="-2" pref="349" max="-2" attributes="0"/>
-                                      <Component id="lblSummaryTitle" min="-2" pref="168" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <EmptySpace pref="77" max="32767" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-=======
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                                   <Component id="jLabel37" min="-2" pref="36" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   <Component id="lblTimeDone" min="-2" max="-2" attributes="0"/>
@@ -3651,7 +3231,6 @@
                                   <Component id="lblScore" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="lblRemarks" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                                   <EmptySpace min="27" pref="334" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -3669,23 +3248,6 @@
                               <Component id="lblSummaryTitle1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="445" max="32767" attributes="0"/>
                           </Group>
-=======
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace pref="17" max="32767" attributes="0"/>
-                                  <Component id="lblSummaryTitle" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane2" min="-2" pref="172" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="bnRetake" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="bnExit1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -3736,20 +3298,6 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bnRetakeActionPerformed"/>
                   </Events>
                 </Component>
-<<<<<<< HEAD
-=======
-                <Component class="javax.swing.JButton" name="bnExit1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Verdana" size="12" style="1"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Exit"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bnExit1ActionPerformed"/>
-                  </Events>
-                </Component>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 <Component class="javax.swing.JLabel" name="lblTimeDone">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -3761,21 +3309,6 @@
                     <Property name="text" type="java.lang.String" value="Total Time: 00:00"/>
                   </Properties>
                 </Component>
-<<<<<<< HEAD
-=======
-                <Component class="javax.swing.JLabel" name="lblSummaryTitle">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Verdana" size="18" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Summary:"/>
-                    <Property name="toolTipText" type="java.lang.String" value=""/>
-                  </Properties>
-                </Component>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
                 <Container class="javax.swing.JScrollPane" name="jScrollPane2">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -3792,7 +3325,6 @@
                     </Component>
                   </SubComponents>
                 </Container>
-<<<<<<< HEAD
                 <Component class="javax.swing.JLabel" name="lblSummaryTitle1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -3805,8 +3337,6 @@
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
-=======
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
               </SubComponents>
             </Container>
           </SubComponents>
@@ -3814,22 +3344,15 @@
         <Component class="javax.swing.JLabel" name="lblname">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< HEAD
               <Font name="Verdana" size="24" style="1"/>
-=======
-              <Font name="Verdana" size="14" style="1"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JProgressBar" name="pb1">
           <Properties>
-<<<<<<< HEAD
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="0"/>
             </Property>
-=======
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             <Property name="maximum" type="int" value="18"/>
             <Property name="stringPainted" type="boolean" value="true"/>
           </Properties>
@@ -3837,11 +3360,7 @@
         <Component class="javax.swing.JLabel" name="labelName1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< HEAD
               <Font name="Verdana" size="24" style="1"/>
-=======
-              <Font name="Verdana" size="14" style="1"/>
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
             </Property>
             <Property name="text" type="java.lang.String" value="Name:"/>
           </Properties>
@@ -3857,7 +3376,6 @@
             <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="lblTimerPropertyChange"/>
           </Events>
         </Component>
-<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="bnExit">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -4013,7 +3531,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="This is Quiz Page has 17"/>
+                <Property name="text" type="java.lang.String" value="This Quiz Page has 17"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -4103,8 +3621,6 @@
             </Component>
           </SubComponents>
         </Container>
-=======
->>>>>>> f0fdc28ed17ceb2f6a798c5bf91f7980b92fcf52
       </SubComponents>
     </Container>
   </SubComponents>
