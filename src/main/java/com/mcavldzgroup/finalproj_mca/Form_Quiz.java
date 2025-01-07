@@ -26,6 +26,7 @@ public class Form_Quiz extends javax.swing.JFrame {
     private int minutes = 0;
     int counter = 10;
     Boolean isIt = false;
+   
 
     /**
      * Creates new form Form_Quiz
@@ -304,6 +305,23 @@ public class Form_Quiz extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tpSummary = new javax.swing.JTextArea();
         lblSummaryTitle1 = new javax.swing.JLabel();
+        lblq1 = new javax.swing.JLabel();
+        lblq2 = new javax.swing.JLabel();
+        lblq3 = new javax.swing.JLabel();
+        lblq4 = new javax.swing.JLabel();
+        lblq5 = new javax.swing.JLabel();
+        lblq6 = new javax.swing.JLabel();
+        lblq7 = new javax.swing.JLabel();
+        lblq8 = new javax.swing.JLabel();
+        lblq9 = new javax.swing.JLabel();
+        lblq10 = new javax.swing.JLabel();
+        lblq11 = new javax.swing.JLabel();
+        lblq12 = new javax.swing.JLabel();
+        lblq13 = new javax.swing.JLabel();
+        lblq14 = new javax.swing.JLabel();
+        lblq15 = new javax.swing.JLabel();
+        lblq16 = new javax.swing.JLabel();
+        lblq17 = new javax.swing.JLabel();
         lblname = new javax.swing.JLabel();
         pb1 = new javax.swing.JProgressBar();
         labelName1 = new javax.swing.JLabel();
@@ -354,35 +372,35 @@ public class Form_Quiz extends javax.swing.JFrame {
         panelUser.setLayout(panelUserLayout);
         panelUserLayout.setHorizontalGroup(
             panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelUserLayout.createSequentialGroup()
+                .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelUserLayout.createSequentialGroup()
+                        .addGap(302, 302, 302)
+                        .addComponent(tfname, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelUserLayout.createSequentialGroup()
+                        .addGap(393, 393, 393)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUserLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(236, Short.MAX_VALUE)
                 .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUserLayout.createSequentialGroup()
                         .addComponent(bnNext)
                         .addGap(29, 29, 29))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUserLayout.createSequentialGroup()
-                        .addComponent(tfname, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(260, 260, 260))))
-            .addGroup(panelUserLayout.createSequentialGroup()
-                .addGroup(panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelUserLayout.createSequentialGroup()
-                        .addGap(357, 357, 357)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelUserLayout.createSequentialGroup()
-                        .addGap(172, 172, 172)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 181, Short.MAX_VALUE))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(209, 209, 209))))
         );
         panelUserLayout.setVerticalGroup(
             panelUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelUserLayout.createSequentialGroup()
-                .addGap(80, 80, 80)
+                .addGap(98, 98, 98)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
+                .addGap(87, 87, 87)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(31, 31, 31)
                 .addComponent(tfname, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 223, Short.MAX_VALUE)
                 .addComponent(bnNext)
                 .addGap(17, 17, 17))
         );
@@ -467,7 +485,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                                 .addComponent(rbChoice11)
                                 .addComponent(rbChoice13, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(rbChoice14, javax.swing.GroupLayout.Alignment.LEADING)))))
-                .addContainerGap(312, Short.MAX_VALUE))
+                .addContainerGap(404, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext1)
@@ -488,7 +506,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext1)
                 .addGap(27, 27, 27))
         );
@@ -572,7 +590,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice23)
                             .addComponent(rbChoice24)
                             .addComponent(rbChoice21))))
-                .addContainerGap(450, Short.MAX_VALUE))
+                .addContainerGap(542, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext2)
@@ -593,7 +611,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice23)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice24)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext2)
                 .addGap(27, 27, 27))
         );
@@ -663,7 +681,7 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel3Layout.setHorizontalGroup(
             panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
-                .addGap(0, 750, Short.MAX_VALUE)
+                .addGap(0, 842, Short.MAX_VALUE)
                 .addComponent(bnNext3)
                 .addGap(95, 95, 95))
             .addGroup(panel3Layout.createSequentialGroup()
@@ -698,7 +716,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice33)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice34)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext3)
                 .addGap(27, 27, 27))
         );
@@ -768,7 +786,7 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel4Layout.setHorizontalGroup(
             panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel4Layout.createSequentialGroup()
-                .addGap(0, 750, Short.MAX_VALUE)
+                .addGap(0, 842, Short.MAX_VALUE)
                 .addComponent(bnNext4)
                 .addGap(95, 95, 95))
             .addGroup(panel4Layout.createSequentialGroup()
@@ -803,7 +821,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice43)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice44)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext4)
                 .addGap(27, 27, 27))
         );
@@ -872,6 +890,10 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel5.setLayout(panel5Layout);
         panel5Layout.setHorizontalGroup(
             panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
+                .addGap(0, 842, Short.MAX_VALUE)
+                .addComponent(bnNext5)
+                .addGap(95, 95, 95))
             .addGroup(panel5Layout.createSequentialGroup()
                 .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel5Layout.createSequentialGroup()
@@ -883,21 +905,18 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice52)
                             .addComponent(rbChoice53)
                             .addComponent(rbChoice54)
-                            .addComponent(rbChoice51))))
+                            .addComponent(rbChoice51)))
+                    .addGroup(panel5Layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jLabel12)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
-                .addGap(0, 129, Short.MAX_VALUE)
-                .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel12)
-                    .addComponent(bnNext5))
-                .addGap(95, 95, 95))
         );
         panel5Layout.setVerticalGroup(
             panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel5Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel12)
                 .addGap(18, 18, 18)
                 .addComponent(rbChoice51)
@@ -907,7 +926,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice53)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice54)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext5)
                 .addGap(27, 27, 27))
         );
@@ -991,7 +1010,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice63)
                             .addComponent(rbChoice64)
                             .addComponent(rbChoice61))))
-                .addContainerGap(423, Short.MAX_VALUE))
+                .addContainerGap(515, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel6Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext6)
@@ -1012,7 +1031,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice63)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice64)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext6)
                 .addGap(27, 27, 27))
         );
@@ -1096,7 +1115,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice73)
                             .addComponent(rbChoice74)
                             .addComponent(rbChoice71))))
-                .addContainerGap(468, Short.MAX_VALUE))
+                .addContainerGap(560, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel7Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext7)
@@ -1117,7 +1136,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice73)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice74)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext7)
                 .addGap(27, 27, 27))
         );
@@ -1201,7 +1220,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice83)
                             .addComponent(rbChoice84)
                             .addComponent(rbChoice81))))
-                .addContainerGap(444, Short.MAX_VALUE))
+                .addContainerGap(536, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel8Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext8)
@@ -1222,7 +1241,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice83)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice84)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext8)
                 .addGap(27, 27, 27))
         );
@@ -1292,7 +1311,7 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel9Layout.setHorizontalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
-                .addGap(0, 750, Short.MAX_VALUE)
+                .addGap(0, 842, Short.MAX_VALUE)
                 .addComponent(bnNext9)
                 .addGap(95, 95, 95))
             .addGroup(panel9Layout.createSequentialGroup()
@@ -1327,7 +1346,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice93)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice94)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext9)
                 .addGap(27, 27, 27))
         );
@@ -1411,7 +1430,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice103)
                             .addComponent(rbChoice104)
                             .addComponent(rbChoice101))))
-                .addContainerGap(338, Short.MAX_VALUE))
+                .addContainerGap(430, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel10Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext10)
@@ -1432,7 +1451,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice103)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice104)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext10)
                 .addGap(27, 27, 27))
         );
@@ -1502,7 +1521,7 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel11Layout.setHorizontalGroup(
             panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
-                .addGap(0, 750, Short.MAX_VALUE)
+                .addGap(0, 842, Short.MAX_VALUE)
                 .addComponent(bnNext11)
                 .addGap(95, 95, 95))
             .addGroup(panel11Layout.createSequentialGroup()
@@ -1537,7 +1556,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice113)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice114)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext11)
                 .addGap(27, 27, 27))
         );
@@ -1625,7 +1644,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                     .addGroup(panel12Layout.createSequentialGroup()
                         .addGap(158, 158, 158)
                         .addComponent(jLabel26)))
-                .addContainerGap(492, Short.MAX_VALUE))
+                .addContainerGap(584, Short.MAX_VALUE))
         );
         panel12Layout.setVerticalGroup(
             panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1642,7 +1661,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice123)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice124)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext12)
                 .addGap(27, 27, 27))
         );
@@ -1712,7 +1731,7 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel13Layout.setHorizontalGroup(
             panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
-                .addGap(0, 750, Short.MAX_VALUE)
+                .addGap(0, 842, Short.MAX_VALUE)
                 .addComponent(bnNext13)
                 .addGap(95, 95, 95))
             .addGroup(panel13Layout.createSequentialGroup()
@@ -1747,7 +1766,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice133)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice134)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext13)
                 .addGap(27, 27, 27))
         );
@@ -1817,7 +1836,7 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel14Layout.setHorizontalGroup(
             panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
-                .addGap(0, 750, Short.MAX_VALUE)
+                .addGap(0, 842, Short.MAX_VALUE)
                 .addComponent(bnNext14)
                 .addGap(95, 95, 95))
             .addGroup(panel14Layout.createSequentialGroup()
@@ -1852,7 +1871,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice143)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice144)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext14)
                 .addGap(27, 27, 27))
         );
@@ -1936,7 +1955,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(rbChoice153)
                             .addComponent(rbChoice154)
                             .addComponent(rbChoice151))))
-                .addContainerGap(459, Short.MAX_VALUE))
+                .addContainerGap(551, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel15Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext15)
@@ -1957,7 +1976,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice153)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice154)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext15)
                 .addGap(27, 27, 27))
         );
@@ -2042,7 +2061,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                                 .addGap(6, 6, 6)
                                 .addComponent(jLabel34))
                             .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(176, Short.MAX_VALUE))
+                .addContainerGap(268, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel16Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(bnNext16)
@@ -2063,7 +2082,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice163)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice164)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext16)
                 .addGap(27, 27, 27))
         );
@@ -2133,7 +2152,7 @@ public class Form_Quiz extends javax.swing.JFrame {
         panel17Layout.setHorizontalGroup(
             panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel17Layout.createSequentialGroup()
-                .addGap(0, 750, Short.MAX_VALUE)
+                .addGap(0, 842, Short.MAX_VALUE)
                 .addComponent(bnNext17)
                 .addGap(95, 95, 95))
             .addGroup(panel17Layout.createSequentialGroup()
@@ -2168,7 +2187,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                 .addComponent(rbChoice173)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbChoice174)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(bnNext17)
                 .addGap(27, 27, 27))
         );
@@ -2204,6 +2223,7 @@ public class Form_Quiz extends javax.swing.JFrame {
 
         tpSummary.setEditable(false);
         tpSummary.setColumns(20);
+        tpSummary.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         tpSummary.setRows(5);
         jScrollPane2.setViewportView(tpSummary);
 
@@ -2211,6 +2231,91 @@ public class Form_Quiz extends javax.swing.JFrame {
         lblSummaryTitle1.setForeground(new java.awt.Color(255, 255, 255));
         lblSummaryTitle1.setText("Summary:");
         lblSummaryTitle1.setToolTipText("");
+
+        lblq1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq1.setForeground(new java.awt.Color(255, 255, 255));
+        lblq1.setText(" --");
+        lblq1.setToolTipText("");
+
+        lblq2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq2.setForeground(new java.awt.Color(255, 255, 255));
+        lblq2.setText(" --");
+        lblq2.setToolTipText("");
+
+        lblq3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq3.setForeground(new java.awt.Color(255, 255, 255));
+        lblq3.setText(" --");
+        lblq3.setToolTipText("");
+
+        lblq4.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq4.setForeground(new java.awt.Color(255, 255, 255));
+        lblq4.setText(" --");
+        lblq4.setToolTipText("");
+
+        lblq5.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq5.setForeground(new java.awt.Color(255, 255, 255));
+        lblq5.setText(" --");
+        lblq5.setToolTipText("");
+
+        lblq6.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq6.setForeground(new java.awt.Color(255, 255, 255));
+        lblq6.setText(" --");
+        lblq6.setToolTipText("");
+
+        lblq7.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq7.setForeground(new java.awt.Color(255, 255, 255));
+        lblq7.setText(" --");
+        lblq7.setToolTipText("");
+
+        lblq8.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq8.setForeground(new java.awt.Color(255, 255, 255));
+        lblq8.setText(" --");
+        lblq8.setToolTipText("");
+
+        lblq9.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq9.setForeground(new java.awt.Color(255, 255, 255));
+        lblq9.setText(" --");
+        lblq9.setToolTipText("");
+
+        lblq10.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq10.setForeground(new java.awt.Color(255, 255, 255));
+        lblq10.setText(" --");
+        lblq10.setToolTipText("");
+
+        lblq11.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq11.setForeground(new java.awt.Color(255, 255, 255));
+        lblq11.setText(" --");
+        lblq11.setToolTipText("");
+
+        lblq12.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq12.setForeground(new java.awt.Color(255, 255, 255));
+        lblq12.setText(" --");
+        lblq12.setToolTipText("");
+
+        lblq13.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq13.setForeground(new java.awt.Color(255, 255, 255));
+        lblq13.setText(" --");
+        lblq13.setToolTipText("");
+
+        lblq14.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq14.setForeground(new java.awt.Color(255, 255, 255));
+        lblq14.setText(" --");
+        lblq14.setToolTipText("");
+
+        lblq15.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq15.setForeground(new java.awt.Color(255, 255, 255));
+        lblq15.setText(" --");
+        lblq15.setToolTipText("");
+
+        lblq16.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq16.setForeground(new java.awt.Color(255, 255, 255));
+        lblq16.setText(" --");
+        lblq16.setToolTipText("");
+
+        lblq17.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        lblq17.setForeground(new java.awt.Color(255, 255, 255));
+        lblq17.setText(" --");
+        lblq17.setToolTipText("");
 
         javax.swing.GroupLayout panelResultLayout = new javax.swing.GroupLayout(panelResult);
         panelResult.setLayout(panelResultLayout);
@@ -2224,16 +2329,37 @@ public class Form_Quiz extends javax.swing.JFrame {
                         .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblScore)
                             .addComponent(lblTimeDone)
-                            .addComponent(lblRemarks, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblRemarks, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblq8, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblq9, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblq10, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(panelResultLayout.createSequentialGroup()
+                                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblq1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq3, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq4, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq5, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq6, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq7, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(63, 63, 63)
+                                .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblq17, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq16, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq15, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq13, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq12, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq11, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblq14, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addComponent(jLabel37))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
                 .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(bnRetake)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32))
             .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResultLayout.createSequentialGroup()
-                    .addContainerGap(532, Short.MAX_VALUE)
+                    .addContainerGap(624, Short.MAX_VALUE)
                     .addComponent(lblSummaryTitle1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(217, 217, 217)))
         );
@@ -2250,18 +2376,52 @@ public class Form_Quiz extends javax.swing.JFrame {
                         .addComponent(lblScore)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblRemarks)
-                        .addGap(27, 334, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblq1)
+                            .addComponent(lblq11))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblq2)
+                            .addComponent(lblq12))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblq3)
+                            .addComponent(lblq13))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblq4)
+                            .addComponent(lblq14))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblq5)
+                            .addComponent(lblq15))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblq6)
+                            .addComponent(lblq16))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblq7)
+                            .addComponent(lblq17))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblq8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblq9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblq10)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(panelResultLayout.createSequentialGroup()
                         .addGap(41, 41, 41)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                         .addComponent(bnRetake)
                         .addGap(22, 22, 22))))
             .addGroup(panelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelResultLayout.createSequentialGroup()
                     .addGap(26, 26, 26)
                     .addComponent(lblSummaryTitle1)
-                    .addContainerGap(445, Short.MAX_VALUE)))
+                    .addContainerGap(541, Short.MAX_VALUE)))
         );
 
         tbpane.addTab("Result", panelResult);
@@ -2441,15 +2601,15 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addComponent(labelName2, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(41, 41, 41)
-                        .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 917, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 1009, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(bnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(134, 134, 134)
+                                .addGap(106, 106, 106)
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 177, Short.MAX_VALUE)))))
+                                .addGap(0, 113, Short.MAX_VALUE)))))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -2464,8 +2624,8 @@ public class Form_Quiz extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(88, 88, 88)
-                                .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
+                                .addComponent(tbpane, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                                 .addComponent(labelName2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2475,7 +2635,7 @@ public class Form_Quiz extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(60, 60, 60)
                                 .addComponent(bnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(59, 59, 59)
+                                .addGap(87, 87, 87)
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2529,9 +2689,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice33.isSelected()){
             score++;
             qans = "Correct!";
+            lblq3.setText("Q3: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq3.setText("Q3: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2579,9 +2741,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice22.isSelected()){
             score++;
             qans = "Correct!";
+            lblq2.setText("Q2: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq2.setText("Q2: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2629,9 +2793,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice11.isSelected()){
             score++;
             qans = "Correct!";
-        }
+            lblq1.setText("Q1: Correct");
+       }
         else{
             qans = "Wrong!";
+            lblq1.setText("Q1: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2747,9 +2913,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice42.isSelected()){
             score++;
             qans = "Correct!";
+            lblq4.setText("Q4: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq4.setText("Q4: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2797,9 +2965,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice52.isSelected()){
             score++;
             qans = "Correct!";
+            lblq5.setText("Q5: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq5.setText("Q5: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2847,9 +3017,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice62.isSelected()){
             score++;
             qans = "Correct!";
+            lblq6.setText("Q6: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq6.setText("Q6: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2897,9 +3069,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice71.isSelected()){
             score++;
             qans = "Correct!";
+            lblq7.setText("Q7: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq7.setText("Q7: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2947,9 +3121,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice84.isSelected()){
             score++;
             qans = "Correct!";
+            lblq8.setText("Q8: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq8.setText("Q8: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -2997,9 +3173,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice92.isSelected()){
             score++;
             qans = "Correct!";
+            lblq9.setText("Q9: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq9.setText("Q9: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3047,9 +3225,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice102.isSelected()){
             score++;
             qans = "Correct!";
+            lblq10.setText("Q10: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq10.setText("Q10: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3097,9 +3277,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice113.isSelected()){
             score++;
             qans = "Correct!";
+            lblq11.setText("Q11: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq11.setText("Q11: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3147,9 +3329,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice122.isSelected()){
             score++;
             qans = "Correct!";
+            lblq12.setText("Q12: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq12.setText("Q12: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3197,9 +3381,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice132.isSelected()){
             score++;
             qans = "Correct!";
+            lblq13.setText("Q13: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq13.setText("Q13: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3247,9 +3433,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice143.isSelected()){
             score++;
             qans = "Correct!";
+            lblq14.setText("Q14: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq14.setText("Q14: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3297,9 +3485,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice152.isSelected()){
             score++;
             qans = "Correct!";
+            lblq15.setText("Q15: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq15.setText("Q15: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3347,9 +3537,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice164.isSelected()){
             score++;
             qans = "Correct!";
+            lblq16.setText("Q16: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq16.setText("Q16: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3398,9 +3590,11 @@ public class Form_Quiz extends javax.swing.JFrame {
         if(rbChoice173.isSelected()){
             score++;
             qans = "Correct!";
+            lblq17.setText("Q17: Correct");
         }
         else{
             qans = "Wrong!";
+            lblq17.setText("Q17: Wrong");
         }
         MsgAlert("Your answer is "+qans, JOptionPane.INFORMATION_MESSAGE, "Answer");
         int currentValue = pb1.getValue();
@@ -3529,6 +3723,24 @@ public class Form_Quiz extends javax.swing.JFrame {
         tbpane.remove(panel16);
         tbpane.remove(panel17);
         tbpane.remove(panelResult);
+        
+        lblq1.setText("");
+        lblq2.setText("");
+        lblq3.setText("");
+        lblq4.setText("");
+        lblq5.setText("");
+        lblq6.setText("");
+        lblq7.setText("");
+        lblq8.setText("");
+        lblq9.setText("");
+        lblq10.setText("");
+        lblq11.setText("");
+        lblq12.setText("");
+        lblq13.setText("");
+        lblq14.setText("");
+        lblq15.setText("");
+        lblq16.setText("");
+        lblq17.setText("");
 
     }//GEN-LAST:event_bnRetakeActionPerformed
 
@@ -3687,6 +3899,23 @@ public class Form_Quiz extends javax.swing.JFrame {
     private javax.swing.JLabel lblTimeDone;
     private javax.swing.JLabel lblTimer;
     private javax.swing.JLabel lblname;
+    private javax.swing.JLabel lblq1;
+    private javax.swing.JLabel lblq10;
+    private javax.swing.JLabel lblq11;
+    private javax.swing.JLabel lblq12;
+    private javax.swing.JLabel lblq13;
+    private javax.swing.JLabel lblq14;
+    private javax.swing.JLabel lblq15;
+    private javax.swing.JLabel lblq16;
+    private javax.swing.JLabel lblq17;
+    private javax.swing.JLabel lblq2;
+    private javax.swing.JLabel lblq3;
+    private javax.swing.JLabel lblq4;
+    private javax.swing.JLabel lblq5;
+    private javax.swing.JLabel lblq6;
+    private javax.swing.JLabel lblq7;
+    private javax.swing.JLabel lblq8;
+    private javax.swing.JLabel lblq9;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel10;
     private javax.swing.JPanel panel11;

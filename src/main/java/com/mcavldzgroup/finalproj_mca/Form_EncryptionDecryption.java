@@ -95,6 +95,7 @@ public class Form_EncryptionDecryption extends javax.swing.JFrame {
         });
 
         encryptedMessage.setColumns(20);
+        encryptedMessage.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         encryptedMessage.setRows(5);
         jScrollPane1.setViewportView(encryptedMessage);
 
